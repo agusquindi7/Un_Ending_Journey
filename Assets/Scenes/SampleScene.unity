@@ -607,8 +607,8 @@ MonoBehaviour:
   _spawnerOffset: 1
   _myAttack: 323
   _timeToDestroy: 0.3
-  _attackCD: 0
-  _attackCurrentCD: 2.5
+  _attackCD: 1
+  _attackCurrentCD: 1
 --- !u!1 &908270251
 GameObject:
   m_ObjectHideFlags: 0
