@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - PlayerHBox
+  - FirstLayout
+  - SecondLayout
+  - ThirdLayout
+  - CaveLayout
   layers:
   - Default
   - TransparentFX

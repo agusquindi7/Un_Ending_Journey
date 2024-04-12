@@ -34,7 +34,9 @@ public class EnemyLife : MonoBehaviour
 
 
         if (other.collider.CompareTag("PlayerHBox"))
+        {
             Debug.Log("Enemy says: OUCH!");
             _vidaActual = _vidaActual - playerAttack._danioEstocada;
+        }
     }
 }
