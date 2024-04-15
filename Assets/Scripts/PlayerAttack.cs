@@ -11,7 +11,7 @@ public class PlayerAttack : MonoBehaviour
     public GameObject hBox;
     public Transform spawner;
     [SerializeField] private float _spawnerOffset;
-    [SerializeField] private KeyCode _myAttack = KeyCode.Mouse0;
+    [SerializeField] private KeyCode _myAttack;
     [SerializeField] private float _timeToDestroy;
     [SerializeField] private float _attackCD = 1;
     [SerializeField] private float _attackCurrentCD;

@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class IsaacCamera : MonoBehaviour
 {
-    //Varios colliders en los layouts, si estoy pisando el trigger del layout tal, lo sigo con la camara
-    public Transform target;
-    public Transform[] layouts = new Transform [4];
+    [SerializeField] private float _speed;
+    private float _currentPosY;
+    private Vector3 _velocity = Vector3.zero;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
-
-        
+        transform.position = Vector3.SmoothDamp(transform.position, new Vector3(transform.position.x, _currentPosY, transform.position.z), ref _velocity, _speed);
     }
 
+    public void MoveToNewRoom(Transform _newRoom)
+    {
+        _currentPosY = _newRoom.position.y;
+    }
 }
