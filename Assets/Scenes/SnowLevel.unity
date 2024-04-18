@@ -636,9 +636,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
+  _ignite: 0
   _damageCD: 0
   _damageCDRefreh: 0
-  myPlayerLife: {fileID: 0}
+  myDestructibleObject: {fileID: 0}
 --- !u!61 &1922705081
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -764,7 +765,7 @@ GameObject:
   - component: {fileID: 2120687452}
   - component: {fileID: 2120687451}
   - component: {fileID: 2120687450}
-  - component: {fileID: 2120687455}
+  - component: {fileID: 2120687456}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -894,7 +895,7 @@ Transform:
   - {fileID: 57047453}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2120687455
+--- !u!114 &2120687456
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -903,10 +904,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2120687449}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8a62faba83f5504faef2ea4d62410de, type: 3}
+  m_Script: {fileID: 11500000, guid: 37ed9a73969a33147919768b084004bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxLife: 100
+  _objectLife: 0
+  objectMaxLife: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
