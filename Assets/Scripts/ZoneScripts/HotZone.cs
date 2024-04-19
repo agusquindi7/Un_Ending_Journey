@@ -10,7 +10,7 @@ public class HotZone : MonoBehaviour
 
     [SerializeField] private float _damageCD, _damageCDRefreh;
 
-    private GameObject playerObject;
+    private GameObject _playerObject;
     
     public DestructibleObject myDestructibleObject;
 
@@ -22,13 +22,13 @@ public class HotZone : MonoBehaviour
 
         _ignite = false;
 
-        playerObject = GameObject.FindGameObjectWithTag("Player");
+        _playerObject = GameObject.FindGameObjectWithTag("Player");
 
     }
 
     private void Update()
     {
-        if (_ignite == true && playerObject.CompareTag("Player"))
+        if (_ignite == true && _playerObject.CompareTag("Player"))
         {
             Debug.Log($"entre en _ignite");
 
@@ -37,7 +37,7 @@ public class HotZone : MonoBehaviour
             {
                 Debug.Log($"entra en el cd");
 
-                playerObject.GetComponent<DestructibleObject>().LifeController(damage);
+                _playerObject.GetComponent<DestructibleObject>().LifeController(damage);
 
                 _damageCD = 0;
                 //llama a la funcion del playerlife Lifecontroles con el parametro de damage de la bala en negativo para restarle vida
