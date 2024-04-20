@@ -9,6 +9,7 @@ TagManager:
   - SecondLayout
   - ThirdLayout
   - CaveLayout
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

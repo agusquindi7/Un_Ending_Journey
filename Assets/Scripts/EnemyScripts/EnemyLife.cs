@@ -31,12 +31,11 @@ public class EnemyLife : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D other)
     {
-
-
         if (other.collider.CompareTag("PlayerHBox"))
         {
             Debug.Log("Enemy says: OUCH!");
             _vidaActual -= playerAttack._danioEstocada;
         }
+        
     }
 }
