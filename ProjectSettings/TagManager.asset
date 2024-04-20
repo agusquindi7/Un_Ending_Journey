@@ -46,3 +46,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Attacks
+    uniqueID: 858527495
+    locked: 0
