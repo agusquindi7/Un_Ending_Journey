@@ -10,6 +10,8 @@ TagManager:
   - ThirdLayout
   - CaveLayout
   - EnemyBullet
+  - PlayerSword
+  - Enemy
   layers:
   - Default
   - TransparentFX

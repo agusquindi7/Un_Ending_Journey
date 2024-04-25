@@ -2,19 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerLife : MonoBehaviour
+public class PlayerLife : DestructibleObject
 {
-    //CANVAS DE VIDA Y PANEL
-    //public CanvasManager myCanvas;
+    //CANVAS DE VIDA
+    public CanvasManager myCanvas;
+
+    //PANEL DE DERROTA
     //public GameObject defeatPanel;
 
-    // Start is called before the first frame update
-    void Start()
+    //EL AWAKE DEL SCRIPT PADRE IGUALA _objectLife = objectMaxLife
+
+    public void Start()
     {
-        //AdjustCanvas();
+        //base.Start();
+        Debug.Log($"PLAYER: vida {_objectLife} y vida maxima {objectMaxLife}");
+        AdjustCanvas();        
+
+        //_objectLife = objectMaxLife;
     }
 
-
+    /*
     //controlador de vida
     public void LifeController(float value)
     {
@@ -26,28 +33,20 @@ public class PlayerLife : MonoBehaviour
 
         LifeRemaining();
     }
+    */
 
-    public void LifeRemaining()
+    public override void LifeRemaining()
     {
         //CANVAS DE LA BARRA DE VIDA
-        //AdjustCanvas();
-
-        /*
-        //si es menor a 0 se destruye el personaje, sino debugueo la vida actual
-        if (_life <= 0)
-        {
-            Destroy(gameObject);
-            //defeatPanel.SetActive(true);
-
-        }
-        */
-    }    
-
-    /*
-    //CANVAS DE LA VIDA    
-    private void AdjustCanvas()
-    {
-        myCanvas.UpdateMyLife(_life, _maxLife);
+        AdjustCanvas();
+        base.LifeRemaining();
     }
-    */
+    
+    //CANVAS DE LA BARRA DE VIDA
+    public void AdjustCanvas()
+    {
+        //paso por parametro la vida y la vida maxima al metodo UpdateMyLife() en el script del Canvas
+        myCanvas.UpdateMyLife(_objectLife, objectMaxLife);
+    }
+    
 }

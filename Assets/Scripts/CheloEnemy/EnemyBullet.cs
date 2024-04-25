@@ -13,38 +13,131 @@ public class EnemyBullet : MonoBehaviour
 
     //public Transform target;
 
-    private GameObject _playerObject;
-    public DestructibleObject myDestructibleObject;
+    public GameObject target;
+    public PlayerLife myPlayerLife;
+
+    private Vector3 _direction;
 
     private void Awake()
     {
-        _deadTimer = 10f;
+        _deadTimer = 3;
         _speed = 4f;
         damage = 10f;
-        _playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (target == null)
+        {
+            target = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        if (target != null)
+        {
+            _direction = (target.transform.position - transform.position).normalized;
+        }
 
     }
 
     private void Start()
     {
         Destroy(gameObject, _deadTimer);
+
+        //_direction = (target.transform.position - transform.position).normalized;
+
     }
 
     void Update()
     {
-        //la bala va a spawnear en una determinada posicion a tal velocidad
-        transform.position += transform.right * _speed * Time.deltaTime;
+
+        // Calcula la dirección hacia el jugador
+        //Vector3 direction = (target.transform.position - transform.position).normalized;
+
+        // Mueve la bala en la dirección calculada
+        transform.position += _direction * _speed * Time.deltaTime;
+    }
+
+    /*
+     * // B A L A  Q U E  S I G U E  A L  P J
+     * 
+    [Header("Values")]
+    [SerializeField] float _deadTimer, _speed;
+    public float damage;
+    //public GameObject espadazo;
+    //public GameObject slowZone;
+    //public bool slowbool = false;
+
+    //public Transform target;
+
+    private GameObject target;
+    public DestructibleObject myDestructibleObject;
+
+    private Vector3 _direction;
+
+    private void Awake()
+    {
+        _deadTimer = 3;
+        _speed = 4f;
+        damage = 10f;
+        if (target == null)
+        {
+            target = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        else return;
+
+        if (_playerObject != null)
+        {
+            _direction = (target.transform.position - transform.position).normalized;
+        }
+
+    }
+
+    private void Start()
+    {
+        Destroy(gameObject, _deadTimer);
+
+        //_direction = (target.transform.position - transform.position).normalized;
+
+    }
+
+    void Update()
+    {
+        
+        // Calcula la dirección hacia el jugador
+        //Vector3 direction = (target.transform.position - transform.position).normalized;
+
+        // Mueve la bala en la dirección calculada
+        //transform.position += direction * _speed * Time.deltaTime;
+
+        Direction();
+    }
+
+    */
+
+
+
+    private void Direction()
+    {
+        Vector3 direction = (target.transform.position - transform.position).normalized;
+
+        transform.position += direction * _speed * Time.deltaTime;
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (_playerObject.CompareTag("Player"))
+        if (collision.CompareTag("PlayerSword"))
         {
-            _playerObject.GetComponent<DestructibleObject>().LifeController(damage);
+            Destroy(gameObject);
+        }
+
+        if (collision.CompareTag("Player"))
+        {
+            target.GetComponent<PlayerLife>().LifeController(damage);
             Debug.Log($"{gameObject.name} Disparado");
             Destroy(gameObject);
         }
     }
+
+
+
 
     /*     
      * private void OnCollisionEnter2D(Collision2D collision)

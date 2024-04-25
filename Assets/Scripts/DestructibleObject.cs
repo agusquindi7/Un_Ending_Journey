@@ -4,27 +4,29 @@ using UnityEngine;
 
 public class DestructibleObject : MonoBehaviour
 {
-    [SerializeField] float _objectLife;
+    [SerializeField] protected float _objectLife;
     public float objectMaxLife;
 
-    private void Start()
+    public void Awake()
     {
-        _objectLife = objectMaxLife;
-
         //la vida del objeto sera igual a la maxima
         _objectLife = objectMaxLife;
         Debug.Log($"{gameObject.name} tiene {_objectLife} de vida base.");
     }
 
     //el objeto recibe daño por parametro de la funcion al ser llamada
-    public void LifeController(float damage)
+    public virtual void LifeController(float damage)
     {
-        _objectLife -= damage;
+        //_objectLife -= damage;
+        if (_objectLife > objectMaxLife) _objectLife = objectMaxLife;
+
+        //el daño que reciba se va a restar a la vida actual. Esta clampeado, no puede salir de los limites de 0 y la vida maxima
+        _objectLife = Mathf.Clamp(_objectLife - damage, 0, objectMaxLife);
         LifeRemaining();
     }
 
     //se destruye al no tener vida o comenta la vida faltante
-    void LifeRemaining()
+    public virtual void LifeRemaining()
     {
         if (_objectLife <= 0)
         {
