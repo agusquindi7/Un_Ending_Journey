@@ -49,6 +49,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Assets
+    uniqueID: 3246936789
+    locked: 0
   - name: Attacks
     uniqueID: 858527495
+    locked: 0
+  - name: Shader
+    uniqueID: 2433397689
     locked: 0
