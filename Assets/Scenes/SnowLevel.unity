@@ -866,8 +866,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barLife: {fileID: 688739692}
   stamina: {fileID: 2011315590}
-  fullLife: {r: 0, g: 0.8588236, b: 0.04705883, a: 0}
-  criticalLife: {r: 1, g: 0.19607845, b: 0, a: 0}
+  fullLife: {r: 0, g: 0.8588236, b: 0.04705883, a: 1}
+  criticalLife: {r: 1, g: 0.19607845, b: 0, a: 1}
+  life2: 0
+  maxLife2: 0
+  lerpLife: 0
+  lastLife: 0
 --- !u!1 &1381702068
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5036675554756175959, guid: 9825481eb7e345f4e8d2131068e3da46, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8282135620540256409, guid: 9825481eb7e345f4e8d2131068e3da46, type: 3}
       propertyPath: m_LocalPosition.x

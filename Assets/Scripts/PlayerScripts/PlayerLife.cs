@@ -14,11 +14,8 @@ public class PlayerLife : DestructibleObject
 
     public void Start()
     {
-        //base.Start();
         Debug.Log($"PLAYER: vida {_objectLife} y vida maxima {objectMaxLife}");
-        AdjustCanvas();        
-
-        //_objectLife = objectMaxLife;
+        AdjustCanvas();      
     }
 
     /*
