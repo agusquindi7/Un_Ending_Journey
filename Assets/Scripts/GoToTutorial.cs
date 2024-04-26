@@ -7,6 +7,6 @@ public class GoToTutorial : MonoBehaviour
 {
     public void ToTutorial()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

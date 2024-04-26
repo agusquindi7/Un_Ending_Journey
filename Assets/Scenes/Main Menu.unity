@@ -4033,6 +4033,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlowZoneFinal
       objectReference: {fileID: 0}
+    - target: {fileID: 7954952066380187550, guid: f81dec20b903a304fa782a34b595a152, type: 3}
+      propertyPath: myPlayerMovement
+      value: 
+      objectReference: {fileID: 1514015371}
     - target: {fileID: 8458596950467619744, guid: f81dec20b903a304fa782a34b595a152, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.335692
@@ -7898,13 +7902,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2425811647501571819, guid: 21f8b8e339c95884c9d2e351c1ebf204, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1712289607}
     - target: {fileID: 4512697156233931485, guid: 21f8b8e339c95884c9d2e351c1ebf204, type: 3}
       propertyPath: m_Name
       value: PlayerNuevo2
       objectReference: {fileID: 0}
     - target: {fileID: 4512697156233931485, guid: 21f8b8e339c95884c9d2e351c1ebf204, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8139337731791440643, guid: 21f8b8e339c95884c9d2e351c1ebf204, type: 3}
       propertyPath: m_Size.x
@@ -7946,6 +7954,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1712289607}
   m_SourcePrefab: {fileID: 100100000, guid: 21f8b8e339c95884c9d2e351c1ebf204, type: 3}
+--- !u!114 &1514015371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2425811647501571819, guid: 21f8b8e339c95884c9d2e351c1ebf204, type: 3}
+  m_PrefabInstance: {fileID: 1514015370}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826225661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1517ed27e88a754fbdf17dbac0a251c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1523221882
 GameObject:
   m_ObjectHideFlags: 0
@@ -8815,6 +8834,10 @@ MonoBehaviour:
   stamina: {fileID: 256479086}
   fullLife: {r: 0, g: 0.8588236, b: 0.04705883, a: 0}
   criticalLife: {r: 1, g: 0.19607845, b: 0, a: 0}
+  life2: 0
+  maxLife2: 0
+  lerpLife: 0
+  lastLife: 0
 --- !u!114 &1988361287
 MonoBehaviour:
   m_ObjectHideFlags: 0

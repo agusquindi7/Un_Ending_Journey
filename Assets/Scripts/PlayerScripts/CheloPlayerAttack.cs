@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheloPlayerAttack : MonoBehaviour
 {
     [SerializeField] private float _swordCD, _swordCDRefresh;
+    public Animator anim;
 
     public Transform spawner;
     public GameObject swordBullet;
@@ -23,6 +24,7 @@ public class CheloPlayerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyAttack) && _swordCD <= 0)
         {
+            anim.SetTrigger("isAttacking");
             Debug.Log($"Espadaso!");
             //myEnemySpeed = 0;
             Attack();
@@ -34,6 +36,7 @@ public class CheloPlayerAttack : MonoBehaviour
 
     private void Attack()
     {
+        
         _swordCD = _swordCDRefresh;
         Instantiate(swordBullet, spawner.position, spawner.rotation);
     }

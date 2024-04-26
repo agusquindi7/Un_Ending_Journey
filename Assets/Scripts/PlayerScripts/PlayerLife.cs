@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerLife : DestructibleObject
 {
@@ -37,6 +38,7 @@ public class PlayerLife : DestructibleObject
         //CANVAS DE LA BARRA DE VIDA
         AdjustCanvas();
         base.LifeRemaining();
+        SceneManager.LoadScene(0);
     }
     
     //CANVAS DE LA BARRA DE VIDA

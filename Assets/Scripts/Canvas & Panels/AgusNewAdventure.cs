@@ -8,7 +8,7 @@ public class AgusNewAdventure : MonoBehaviour
     
     public void NewAdventure()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
 }

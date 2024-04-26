@@ -7,6 +7,6 @@ public class TestingRoom : MonoBehaviour
 {
     public void ToTestRoom()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }
