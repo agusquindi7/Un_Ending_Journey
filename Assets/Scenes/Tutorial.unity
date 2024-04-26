@@ -8420,8 +8420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   barLife: {fileID: 362887139}
   stamina: {fileID: 256479086}
-  fullLife: {r: 0, g: 0.8588236, b: 0.04705883, a: 0}
-  criticalLife: {r: 1, g: 0.19607845, b: 0, a: 0}
+  fullLife: {r: 0, g: 0.8588236, b: 0.04705883, a: 1}
+  criticalLife: {r: 1, g: 0.19607845, b: 0, a: 1}
   life2: 0
   maxLife2: 0
   lerpLife: 0
@@ -9375,11 +9375,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3112156715494115100, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.41
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 3112156715494115100, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.44
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 3112156715494115100, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: m_LocalPosition.z
