@@ -13,6 +13,7 @@ public class AgusNewAdventure : MonoBehaviour
     public void Awake()
     {
         audioController = GetComponent<AudioSource>();
+        audioManager = GetComponent<AudioManager>();
     }
 
     public void NewAdventure()

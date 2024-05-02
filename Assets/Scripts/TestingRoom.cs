@@ -5,8 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class TestingRoom : MonoBehaviour
 {
-    public AudioSource audioController;
+    private AudioSource audioController;
     public AudioManager audioManager;
+
+    public void Awake()
+    {
+        audioController = GetComponent<AudioSource>();
+        audioManager = GetComponent<AudioManager>();
+    }
 
     public void ToTestRoom()
     {

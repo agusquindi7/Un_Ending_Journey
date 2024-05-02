@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 858527495
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 94cdabbc6cea0584fbc3fae040637aed, type: 3}
   m_Color: {r: 0.8867924, g: 0.22922742, b: 0.22922742, a: 1}
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 860973b169bcc4c4988bc1795e501e65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _deadTimer: 0
+  _deadTimer: 0.2
   _speed: 5
   swordDmg: 15
   myEnemyLife: {fileID: 0}

@@ -6,18 +6,22 @@ public class PlayerMovement : MonoBehaviour
 {
     //Ataque melee y a distancia?
     //Salto/Esquive?
-
+    
+    [Header("Referencias")]
+ 
     public Animator anim;
     public Transform character;
     public Rigidbody2D myRB2D;
     public Transform spawner;
 
+    [Header("Valores")]
+
     public float normalSpeed, constantSpeed, dashSpeed;
     public float dashTime;
-
     Vector2 lastImput;
     public KeyCode myKeyDash;
     public float dashCooldown, initialDashCooldown;
+
 
     public bool isDashing = false;
 
@@ -33,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //busco el gameobjecto por tag
         if (character == null) character = GameObject.FindGameObjectWithTag("Player").transform;
+       
 
         //la velocidad normal es la constante
         normalSpeed = constantSpeed;
@@ -75,6 +80,8 @@ public class PlayerMovement : MonoBehaviour
             //myRB2D.MovePosition(myRB2D.position + moveDirection * speed * Time.fixedDeltaTime);
 
             myRB2D.velocity = moveDirection * normalSpeed;
+            //Llamo al metodo de seleccion de audios
+            
 
             //si la direccion del vector2 es distinta de 0 hago un calculo de angulo para que la rotacion del spawner respete a donde mire el personaje
             if (moveDirection != Vector2.zero)
@@ -121,6 +128,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (dashCooldown <= 0)
         {
+            //Llamo al sonido del dash
             isDashing = true;
             //agrego una fuerza de impulso a la ultima direccion donde fue el personaje
             myRB2D.AddForce(lastImput * dashSpeed, ForceMode2D.Impulse);

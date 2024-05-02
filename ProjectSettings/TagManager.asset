@@ -55,6 +55,12 @@ TagManager:
   - name: Attacks
     uniqueID: 858527495
     locked: 0
+  - name: Arboles
+    uniqueID: 2852736359
+    locked: 0
+  - name: Arbustos
+    uniqueID: 11141625
+    locked: 0
   - name: Shader
     uniqueID: 2433397689
     locked: 0
