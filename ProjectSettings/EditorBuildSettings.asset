@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Defeat Scene.unity
     guid: 01ae57559010e6e4d98cf83a46df27fb
+  - enabled: 1
+    path: Assets/Scenes/Castillo1.unity
+    guid: f936be21633ee554fadff1880befdf7c
   m_configObjects: {}
