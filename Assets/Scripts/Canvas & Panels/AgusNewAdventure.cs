@@ -16,6 +16,11 @@ public class AgusNewAdventure : MonoBehaviour
         audioManager = GetComponent<AudioManager>();
     }
 
+    public void GoToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void NewAdventure()
     {
         SceneManager.LoadScene(1);

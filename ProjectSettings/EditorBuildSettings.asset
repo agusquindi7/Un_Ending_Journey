@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SnowLevel.unity
     guid: 72f5bc59824711d4bafb9f34f45e0e3d
+  - enabled: 1
+    path: Assets/Scenes/Defeat Scene.unity
+    guid: 01ae57559010e6e4d98cf83a46df27fb
   m_configObjects: {}
