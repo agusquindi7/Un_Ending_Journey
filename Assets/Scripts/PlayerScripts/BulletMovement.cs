@@ -12,8 +12,8 @@ public class BulletMovement : MonoBehaviour
 
     private void Awake()
     {
-        _deadTimer = 3;
-        _speed = 4f;
+        _deadTimer = 1;
+        _speed = 6f;
         swordDmg = 15f;
     }
 

@@ -5650,6 +5650,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3763519000286204197, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
+      propertyPath: swordBullet
+      value: 
+      objectReference: {fileID: 7765399421977144164, guid: 97c2c7e206f6a2544935fd87ad522c42, type: 3}
     - target: {fileID: 6234857557548895062, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: myCanvas
       value: 
