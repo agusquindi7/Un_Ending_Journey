@@ -21,7 +21,7 @@ public class EnemyShootAttack : MonoBehaviour
         //if (_playerObject == null) _playerObject = GameObject.FindGameObjectWithTag("Player");
         //if (target == null) target = FindObjectOfType<PlayerLife>().transform;
 
-        attackRadius = 10f;
+        attackRadius = 4f;
 
         if (target == null) target = GameObject.FindGameObjectWithTag("Player");
         

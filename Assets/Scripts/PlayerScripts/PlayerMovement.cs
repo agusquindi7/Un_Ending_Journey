@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     
     [Header("Referencias")]
  
-    public Animator anim;
+    //public Animator anim;
     public Transform character;
     public Rigidbody2D myRB2D;
     public Transform spawner;
@@ -55,8 +55,8 @@ public class PlayerMovement : MonoBehaviour
 
         //Cambio las variables X e Y del Blend Tree
         
-        anim.SetFloat("X", Input.GetAxisRaw("Horizontal"));
-        anim.SetFloat("Y", Input.GetAxisRaw("Vertical"));
+        //anim.SetFloat("X", Input.GetAxisRaw("Horizontal"));
+        //anim.SetFloat("Y", Input.GetAxisRaw("Vertical"));
 
         //Normalizo ambos inputs en un vector para guardar su direccion
         Vector2 moveDirection = new Vector2(horizontalInput, verticalInput).normalized;
@@ -99,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(myKeyDash) && dashCooldown <= 0)
         {
-            anim.SetTrigger("isDashing");
+            //anim.SetTrigger("isDashing");
             Dash();
         }
 
@@ -132,8 +132,8 @@ public class PlayerMovement : MonoBehaviour
             isDashing = true;
             //agrego una fuerza de impulso a la ultima direccion donde fue el personaje
             myRB2D.AddForce(lastImput * dashSpeed, ForceMode2D.Impulse);
-            anim.SetFloat("XDash", Input.GetAxisRaw("Horizontal"));
-            anim.SetFloat("YDash", Input.GetAxisRaw("Vertical"));
+            //anim.SetFloat("XDash", Input.GetAxisRaw("Horizontal"));
+            //anim.SetFloat("YDash", Input.GetAxisRaw("Vertical"));
             //trail.emitting = true;
             //CODIGOAGUS anim.SetBool("isDashing",false);
             //co rutina para que lo haga por un tiempo determinado y luego la igualo a 0

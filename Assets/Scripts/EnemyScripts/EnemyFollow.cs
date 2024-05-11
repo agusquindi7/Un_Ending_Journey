@@ -14,6 +14,23 @@ public class EnemyFollow : MonoBehaviour
     private bool isMovingVertically = false;
     private bool isStopped = false; // Controla si el enemigo está detenido
 
+    /*
+    public float actualX;
+    public float actualY;
+
+    public GameObject spawnery;
+    public GameObject spawnerY;
+    public GameObject spawnerx;
+    public GameObject spawnerX;
+
+    public bool spawneryBool;
+    public bool spawnerYBool;
+    public bool spawnerxBool;
+    public bool spawnerXBool;
+    */
+
+    public GameObject spawner;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,6 +61,8 @@ public class EnemyFollow : MonoBehaviour
                 if (Mathf.Abs(target.position.x - transform.position.x) > 0.1f)
                 {
                     rb.velocity = new Vector2(Mathf.Sign(target.position.x - transform.position.x) * moveSpeed, 0f);
+
+                    //actualX = gameObject.transform.position.x;
                 }
                 else
                 {
@@ -57,6 +76,9 @@ public class EnemyFollow : MonoBehaviour
                 if (Mathf.Abs(target.position.y - transform.position.y) > 0.1f)
                 {
                     rb.velocity = new Vector2(0f, Mathf.Sign(target.position.y - transform.position.y) * moveSpeed);
+
+                    //actualY = gameObject.transform.position.y;
+
                 }
                 else
                 {
@@ -65,6 +87,8 @@ public class EnemyFollow : MonoBehaviour
                 }
             }
         }
+
+        //if (gameObject.transform.position.y )
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -86,4 +110,14 @@ public class EnemyFollow : MonoBehaviour
             isStopped = false;
         }
     }
+    /*
+    private void SpawnerActive()
+    {
+        if (gameObject.transform.position.x <= actualX) spawnerxBool = true;
+        else if (gameObject.transform.position.x >= actualX) spawnerXBool = true;
+        else if (gameObject.transform.position.y <= actualY) spawneryBool = true;
+        else if (gameObject.transform.position.y >= actualY) spawnerYBool = true;
+
+
+    }*/
 }

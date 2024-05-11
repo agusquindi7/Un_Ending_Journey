@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e757df89292034ba846b4e51b6506d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRadius: 10
+  attackRadius: 4
   enemyBullet: {fileID: 8827486808073707611, guid: bdcdb697b140ffd4085df3e89c4844c0, type: 3}
   bulletSpawner: {fileID: 530985833415079494}
   target: {fileID: 0}

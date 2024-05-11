@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Assets_Nivel_1
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 415
+        width: 240
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2c58d2a7906234c9e1dbb4ed59e004
+      internalID: 1711072989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Nivel_1_1
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 598
+        width: 268
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410e0f07e394b674094a129e6babe842
+      internalID: 1353290828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Nivel_1_2
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 631
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf80ec92b442a584397a7c2cac5790d2
+      internalID: 477810241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Nivel_1_3
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 561
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d79c3509157c440862ebb251483be4
+      internalID: 816308675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Nivel_1_4
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 497
+        width: 88
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd26ebb5f62ef74abb55e8af47e502d
+      internalID: -531713964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Nivel_1_5
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 426
+        width: 142
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462ab165450ef8d48b44d1b6696bbff7
+      internalID: -2003720690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Nivel_1_6
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 479
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd59ba219a9a7ee46ba495d9abcbae9a
+      internalID: 568899282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +266,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Assets_Nivel_1: 1711072989
+      Assets_Nivel_1_1: 1353290828
+      Assets_Nivel_1_2: 477810241
+      Assets_Nivel_1_3: 816308675
+      Assets_Nivel_1_4: -531713964
+      Assets_Nivel_1_5: -2003720690
+      Assets_Nivel_1_6: 568899282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
