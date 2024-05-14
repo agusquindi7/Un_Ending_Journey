@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class DestructibleObject : MonoBehaviour
 {
-    [SerializeField] protected float _objectLife;
+    //Chelo tuve que cambiarlo a publico porque no me dejaba acceder
+    [SerializeField] public float _objectLife;
     public float objectMaxLife;
 
     public void Awake()
