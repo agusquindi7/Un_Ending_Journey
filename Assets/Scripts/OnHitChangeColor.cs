@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class OnHitChangeColor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Color normalColor;
+    [SerializeField] private Color onHitColor = Color.red;
+    [SerializeField] private SpriteRenderer mySR;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        mySR = GetComponentInParent<SpriteRenderer>();
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerSword"))
+        {
+            StartCoroutine("ChangeColor");
+        }  
+    }
+    
+    IEnumerator ChangeColor()
+    {
+        mySR.color = onHitColor;
+        yield return new WaitForSeconds(0.5f);
+        mySR.color = normalColor;
     }
 }
