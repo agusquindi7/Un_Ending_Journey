@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public Transform target;
+    public GameObject target;
     public float moveSpeed = 5f;
 
     private Rigidbody2D rb;
@@ -33,6 +33,12 @@ public class EnemyFollow : MonoBehaviour
 
     public GameObject spawner;
 
+    private void Awake()
+    {        
+            target = GameObject.FindGameObjectWithTag("Player");
+
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,31 +51,28 @@ public class EnemyFollow : MonoBehaviour
             if (!isMovingHorizontally && !isMovingVertically)
             {
                 //Se mueve mueve primero horizontalmente si la diferencia en X es mayor que Y
-                if (Mathf.Abs(target.position.x - transform.position.x) > Mathf.Abs(target.position.y - transform.position.y))
+                if (Mathf.Abs(target.transform.position.x - transform.position.x) > Mathf.Abs(target.transform.position.y - transform.position.y))
                 {
-                    rb.velocity = new Vector2(Mathf.Sign(target.position.x - transform.position.x) * moveSpeed, 0f);
+                    rb.velocity = new Vector2(Mathf.Sign(target.transform.position.x - transform.position.x) * moveSpeed, 0f);
                     isMovingHorizontally = true;
 
                     UpdateSpawnerRotation();
-
                 }
                 else
                 {
                     //Si la diferencia en Y es mayor que X, va a moverse verticalmente
-                    rb.velocity = new Vector2(0f, Mathf.Sign(target.position.y - transform.position.y) * moveSpeed);
+                    rb.velocity = new Vector2(0f, Mathf.Sign(target.transform.position.y - transform.position.y) * moveSpeed);
                     isMovingVertically = true;
 
                     UpdateSpawnerRotation();
-
                 }
             }
             else if (isMovingHorizontally)
             {
                 //Se mueve horizontalmente hasta alcanzar la misma coordenada X que el jugador
-                if (Mathf.Abs(target.position.x - transform.position.x) > 0.1f)
+                if (Mathf.Abs(target.transform.position.x - transform.position.x) > 0.1f)
                 {
-                    rb.velocity = new Vector2(Mathf.Sign(target.position.x - transform.position.x) * moveSpeed, 0f);
-                    
+                    rb.velocity = new Vector2(Mathf.Sign(target.transform.position.x - transform.position.x) * moveSpeed, 0f);                    
                 }
                 //Si la distancia es la misma apago el bool horizontal
                 else
@@ -81,10 +84,9 @@ public class EnemyFollow : MonoBehaviour
             else if (isMovingVertically)
             {
                 //Se mueve verticalmente hasta alcanzar la misma coordenada Y que el jugador
-                if (Mathf.Abs(target.position.y - transform.position.y) > 0.1f)
+                if (Mathf.Abs(target.transform.position.y - transform.position.y) > 0.1f)
                 {
-                    rb.velocity = new Vector2(0f, Mathf.Sign(target.position.y - transform.position.y) * moveSpeed);
-
+                    rb.velocity = new Vector2(0f, Mathf.Sign(target.transform.position.y - transform.position.y) * moveSpeed);
                 }
 
                 //Si la distancia es la misma apago el bool vertical
@@ -100,7 +102,7 @@ public class EnemyFollow : MonoBehaviour
         void UpdateSpawnerRotation()
         {
             //calculo la dirección entre el enemigo y el jugador
-            Vector2 direction = target.position - transform.position;
+            Vector2 direction = target.transform.position - transform.position;
             //calculo el ángulo en radianes
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             //creo una rotación

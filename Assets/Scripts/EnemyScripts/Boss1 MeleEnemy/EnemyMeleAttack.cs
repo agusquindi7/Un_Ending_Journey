@@ -23,7 +23,6 @@ public class EnemyMeleAttack : MonoBehaviour
     {
         Attack();
         cd += Time.deltaTime;
-
     }
 
     public void Attack()
@@ -35,8 +34,7 @@ public class EnemyMeleAttack : MonoBehaviour
             {
                 Instantiate(enemyMeleBullet, spawner.position, spawner.rotation);
                 cd = 0;
-                StartCoroutine (Waiting(_waitSeconds));
-                
+                StartCoroutine (Waiting(_waitSeconds));                
             }
             cd += Time.deltaTime;
         }
