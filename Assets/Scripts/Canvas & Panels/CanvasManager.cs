@@ -7,18 +7,16 @@ public class CanvasManager : MonoBehaviour
 {
     //RECORDAR QUE LOS COLORES SE PONEN CON ALPHA 0, ASI QUE VAN A DESAPARECER.
     public Image barLife;
-    public Image stamina;
+    //public Image stamina;
 
     public Color fullLife, criticalLife;
 
     public float life2, maxLife2;
 
     public float lerpLife;
-    public float lastLife;
-
-
-// Start is called before the first frame update
-void Start()
+    //public float lastLife;
+    
+    void Start()
     {
         lerpLife = maxLife2;
         barLife.color = fullLife;

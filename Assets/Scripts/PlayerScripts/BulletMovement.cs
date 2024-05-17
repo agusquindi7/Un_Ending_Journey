@@ -42,6 +42,13 @@ public class BulletMovement : MonoBehaviour
             collision.GetComponent<CheloEnemyLife>().LifeController(swordDmg);
             Destroy(gameObject);
         }
+
+        if (collision.CompareTag("Boss"))
+        {
+            //addForce
+            collision.GetComponent<BossLife>().LifeController(swordDmg);
+            Destroy(gameObject);
+        }
     }
 
     /*

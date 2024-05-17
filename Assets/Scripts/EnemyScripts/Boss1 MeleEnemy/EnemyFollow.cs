@@ -36,7 +36,6 @@ public class EnemyFollow : MonoBehaviour
     private void Awake()
     {        
             target = GameObject.FindGameObjectWithTag("Player");
-
     }
 
     void Start()

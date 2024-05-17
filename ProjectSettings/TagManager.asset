@@ -12,6 +12,8 @@ TagManager:
   - EnemyBullet
   - PlayerSword
   - Enemy
+  - Boss
+  - Wall
   layers:
   - Default
   - TransparentFX

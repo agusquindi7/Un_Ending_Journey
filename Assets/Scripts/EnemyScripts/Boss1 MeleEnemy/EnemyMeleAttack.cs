@@ -59,5 +59,4 @@ public class EnemyMeleAttack : MonoBehaviour
         //attackBool = false;
         //Instantiate(enemyMeleBullet, spawner.position, spawner.rotation);
     }
-
 }
