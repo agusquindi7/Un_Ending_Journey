@@ -4985,6 +4985,8 @@ GameObject:
   - component: {fileID: 125708332146862987}
   - component: {fileID: 157649700052921811}
   - component: {fileID: 147298635841502834}
+  - component: {fileID: -2225127262891016106}
+  - component: {fileID: -69006990305203164}
   m_Layer: 0
   m_Name: EnemigoSlime
   m_TagString: Enemy
@@ -5070,7 +5072,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5959670702796541543}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -5215,3 +5217,39 @@ MonoBehaviour:
   spawner: {fileID: 5646286318600027348}
   spawnCount: 2
   radius: 1
+--- !u!114 &-2225127262891016106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5959670702796541543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7901e7d134e0d54abe27c5a270883d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalColor: {r: 0.06666667, g: 1, b: 0, a: 1}
+  onHitColor: {r: 1, g: 0, b: 0, a: 0.49019608}
+  mySR: {fileID: 0}
+--- !u!95 &-69006990305203164
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5959670702796541543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 97a045e6708cfac4cb93158bda916a72, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

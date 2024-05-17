@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Assets_Castillo_3_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 577
+        width: 425
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc458743d24d0354d9fe79d6c1712307
+      internalID: 203977532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Castillo_3_2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 572
+        width: 348
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca236a406a7dd504993b8543f1bf46c1
+      internalID: -618054192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Castillo_3_3
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 575
+        width: 364
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2a7b4e92a97c441ab351317eea8011
+      internalID: -905870097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Castillo_3_4
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 575
+        width: 350
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5362ec1ad956cb46a85a738b71d1464
+      internalID: -880141565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Castillo_3_5
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 575
+        width: 345
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4197e9dce2791d34c99c5cc44e473985
+      internalID: 1976391490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Castillo_3_6
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 128
+        width: 409
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e40e711a3ded04fb02085d2302980e
+      internalID: 285686598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Castillo_3_7
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 128
+        width: 409
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507c4582690106e46b5948dc03ab97fc
+      internalID: 1464462089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Castillo_3_8
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 128
+        width: 409
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f2aeff0ddc4c64ab9a5192e2c1d1d7
+      internalID: -189626950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Castillo_3_9
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 128
+        width: 409
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261b13ca026a21a4191de3718ea9d149
+      internalID: 1931865807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +308,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Assets_Castillo_3_0: 203977532
+      Assets_Castillo_3_1: 135561444
+      Assets_Castillo_3_2: -618054192
+      Assets_Castillo_3_3: -905870097
+      Assets_Castillo_3_4: -880141565
+      Assets_Castillo_3_5: 1976391490
+      Assets_Castillo_3_6: 285686598
+      Assets_Castillo_3_7: 1464462089
+      Assets_Castillo_3_8: -189626950
+      Assets_Castillo_3_9: 1931865807
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

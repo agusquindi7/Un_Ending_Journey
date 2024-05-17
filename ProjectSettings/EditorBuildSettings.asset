@@ -18,6 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Defeat Scene.unity
     guid: 01ae57559010e6e4d98cf83a46df27fb
   - enabled: 1
+    path: Assets/Scenes/CastilloNoBoss.unity
+    guid: 8019bb45cf3ea884fba4accc7b2a5834
+  - enabled: 1
+    path: Assets/Scenes/BossFight.unity
+    guid: 756e540a556f2e84794dc2d301e61534
+  - enabled: 1
+    path: Assets/Scenes/Victory Menu.unity
+    guid: d1525869ee7ae86469e4008a4b114d9b
+  - enabled: 0
     path: Assets/Scenes/Castillo1.unity
     guid: f936be21633ee554fadff1880befdf7c
   m_configObjects: {}

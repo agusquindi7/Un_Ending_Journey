@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossLife : DestructibleObject
 {
@@ -28,7 +29,7 @@ public class BossLife : DestructibleObject
 
 
         //ACA DEBERIA INICIAR OTRO NIVEL AGUS?
-        //if (_objectLife <= 0) SceneManager.LoadScene(3);
+        if (_objectLife <= 0) SceneManager.LoadScene(6);
 
 
     }
