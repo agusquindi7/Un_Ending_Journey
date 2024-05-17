@@ -331,7 +331,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Maestro de la Espada Sombria
+  m_text: Acolito De Mammon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c88830076ba04584588fd7c101d3af7f, type: 2}
   m_sharedMaterial: {fileID: -9032759741008883004, guid: c88830076ba04584588fd7c101d3af7f, type: 2}

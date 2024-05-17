@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c2f2f7b92dd093429caf245169298e2
+guid: 7c228e9282de650429d229f505d332b1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,43 +110,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lagos_0
+      name: Senuelo_y_Calabozo_0
       rect:
         serializedVersion: 2
-        x: 520
-        y: 276
-        width: 456
-        height: 216
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 576
+        y: 358
+        width: 223
+        height: 284
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2ca713f6a0a588428f37a066daec525
-      internalID: 1032692209
+      spriteID: fbeb660f78a1efb409033df36b4c60d1
+      internalID: 177881746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lagos_1
+      name: Senuelo_y_Calabozo_1
       rect:
         serializedVersion: 2
-        x: 1049
-        y: 283
-        width: 456
-        height: 216
+        x: 886
+        y: 443
+        width: 148
+        height: 193
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eefd4508d4871ac478f05a43d7753024
-      internalID: -455811387
+      spriteID: 55b423a2ee451b24f98aa7dc8ec28511
+      internalID: -1539394604
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Lagos_0: 1032692209
-      Lagos_1: -455811387
+      Senuelo_y_Calabozo_0: 177881746
+      Senuelo_y_Calabozo_1: -1539394604
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

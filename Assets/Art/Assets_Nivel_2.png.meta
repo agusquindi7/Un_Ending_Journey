@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c2f2f7b92dd093429caf245169298e2
+guid: 8b7ec42511f65d342b6a9622a312664a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lagos_0
+      name: Assets_Nivel_2_0
       rect:
         serializedVersion: 2
-        x: 520
-        y: 276
-        width: 456
-        height: 216
+        x: 651
+        y: 490
+        width: 51
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2ca713f6a0a588428f37a066daec525
-      internalID: 1032692209
+      spriteID: 92870255023ade6469353203157b2450
+      internalID: -139941846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lagos_1
+      name: Assets_Nivel_2_1
       rect:
         serializedVersion: 2
-        x: 1049
-        y: 283
-        width: 456
-        height: 216
+        x: 839
+        y: 527
+        width: 303
+        height: 242
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eefd4508d4871ac478f05a43d7753024
-      internalID: -455811387
+      spriteID: 9fa512d4cf9102f48b9c9827d663526b
+      internalID: 545421556
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Lagos_0: 1032692209
-      Lagos_1: -455811387
+      Assets_Nivel_2_0: -139941846
+      Assets_Nivel_2_1: 545421556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

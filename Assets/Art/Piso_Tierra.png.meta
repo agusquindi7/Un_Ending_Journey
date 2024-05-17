@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c2f2f7b92dd093429caf245169298e2
+guid: 4755cc68f2254b14695d8cac5c59297f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Lagos_0
+      name: Piso_Tierra_0
       rect:
         serializedVersion: 2
-        x: 520
-        y: 276
-        width: 456
-        height: 216
+        x: 559
+        y: 647
+        width: 250
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2ca713f6a0a588428f37a066daec525
-      internalID: 1032692209
+      spriteID: 7e5460fed04d4014182a1332e716e4e0
+      internalID: -1019451187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lagos_1
+      name: Piso_Tierra_1
       rect:
         serializedVersion: 2
-        x: 1049
-        y: 283
-        width: 456
-        height: 216
+        x: 830
+        y: 647
+        width: 272
+        height: 179
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eefd4508d4871ac478f05a43d7753024
-      internalID: -455811387
+      spriteID: 18d46302c1e2df149a8ba376de6d0192
+      internalID: 1736007049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piso_Tierra_2
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 647
+        width: 262
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811175c31ea57e44a8b4f48a0b1358be
+      internalID: 599822323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piso_Tierra_3
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 447
+        width: 250
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ea5d82db7ffcc42b564a8e312b7334
+      internalID: 1788613784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piso_Tierra_4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 451
+        width: 274
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f892a01703ce69469956af90b7e0dc3
+      internalID: 1824992376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Piso_Tierra_5
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 447
+        width: 262
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557fbc39ec675d643aa73e24eea80913
+      internalID: -810446818
       vertices: []
       indices: 
       edges: []
@@ -162,8 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Lagos_0: 1032692209
-      Lagos_1: -455811387
+      Piso_Tierra_0: -1019451187
+      Piso_Tierra_1: 1736007049
+      Piso_Tierra_2: 599822323
+      Piso_Tierra_3: 1788613784
+      Piso_Tierra_4: 1824992376
+      Piso_Tierra_5: -810446818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
