@@ -9,10 +9,14 @@ public class EnemyShootAttack : MonoBehaviour
     public Transform bulletSpawner;
     public GameObject target;
 
+    [Header("Agus Add-Ons")]
+    public bool isOnRange;
+    [SerializeField] AudioManager audioManager;
     //private GameObject _playerObject;
-    
-    [SerializeField] private float _shootCooldown;
-    [SerializeField] private float cooldownReloader = 1f;
+    [Header("Cooldoown")]
+    //Los cambie a pubic porque sino no me deja referenciarlos para la UI
+    [SerializeField] public float _shootCooldown;
+    [SerializeField] public float cooldownReloader = 1f;
 
 
     private void Awake()
@@ -42,8 +46,10 @@ public class EnemyShootAttack : MonoBehaviour
         //if (distance < attackRadius && distance >= attackRadius)
         if (distance <= attackRadius)
 
-            {
-                Debug.Log($"entra en radio");
+        {   //Prendo el bool para prender el signo de exclamacion cuando entro al radio del enemigo
+            isOnRange = true;
+
+            Debug.Log($"entra en radio");
 
             //dispara si no hay cd y rota hacia el personaje
             //RotationToThePlayer();
@@ -53,15 +59,18 @@ public class EnemyShootAttack : MonoBehaviour
                 //myEnemySpeed = 0;
                 Shoot();
                 //myEnemySpeed = myNormalSpeed;
-            }         
+            }
         }
+        //Si estoy afuera del rango apago el booleano
+        else isOnRange = false;
 
         if (_shootCooldown > 0) _shootCooldown -= Time.deltaTime;
     }
 
     private void Shoot()
     {
-        
+        //Cuando dispara reproduzco el sonido de fireball
+        audioManager.SeleccionAudio(0,1f);
         //spawnea una bullet en el spawner y el cd se iguala a 1
         _shootCooldown = cooldownReloader;
         Instantiate(enemyBullet, bulletSpawner.position, bulletSpawner.rotation);
