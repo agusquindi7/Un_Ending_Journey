@@ -18,6 +18,9 @@ public class EnemyShootAttack : MonoBehaviour
     [SerializeField] public float _shootCooldown;
     [SerializeField] public float cooldownReloader = 1f;
 
+    //Agus - Agrego un animador para controlar el ataque
+    public Animator enemyAnim;
+
 
     private void Awake()
     {
@@ -69,8 +72,9 @@ public class EnemyShootAttack : MonoBehaviour
 
     private void Shoot()
     {
-        //Cuando dispara reproduzco el sonido de fireball
+        //Cuando dispara reproduzco el sonido de fireball y animo el ataque
         audioManager.SeleccionAudio(0,1f);
+        enemyAnim.SetTrigger("isAttacking");
         //spawnea una bullet en el spawner y el cd se iguala a 1
         _shootCooldown = cooldownReloader;
         Instantiate(enemyBullet, bulletSpawner.position, bulletSpawner.rotation);
