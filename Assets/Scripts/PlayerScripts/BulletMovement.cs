@@ -12,9 +12,11 @@ public class BulletMovement : MonoBehaviour
 
     private void Awake()
     {
+        /*
         _deadTimer = 1;
         _speed = 6f;
         swordDmg = 15f;
+        */
     }
 
     //[SerializeField] private float _speed;
@@ -22,14 +24,14 @@ public class BulletMovement : MonoBehaviour
     void Start()
     {
         //Al instanciarse la espada ya tiene una cuenta regresiva para destruirse
-        Destroy(gameObject, _deadTimer);
+        //Destroy(gameObject, _deadTimer);
 
     }
 
     public void Update()
     {
         //la espada se dirige en linea recta
-        transform.position += transform.right * _speed * Time.deltaTime;
+        //transform.position += transform.right * _speed * Time.deltaTime;
     }
 
     
@@ -40,14 +42,14 @@ public class BulletMovement : MonoBehaviour
         {
             //addForce
             collision.GetComponent<CheloEnemyLife>().LifeController(swordDmg);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
 
         if (collision.CompareTag("Boss"))
         {
             //addForce
             collision.GetComponent<BossLife>().LifeController(swordDmg);
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 

@@ -6,10 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
     //Ataque melee y a distancia?
     //Salto/Esquive?
-    
+
     [Header("Referencias")]
- 
-    //public Animator anim;
+
+    public AudioManager audioManager;
+    public Animator anim;
     public Transform character;
     public Rigidbody2D myRB2D;
     public Transform spawner;
@@ -128,6 +129,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (dashCooldown <= 0)
         {
+            //Setteo el trigger para que dashee y ademas reproduzco el sonido del dash
+            anim.SetTrigger("isDashing");
+            audioManager.SeleccionAudio(1,0.8f);
+
             //Llamo al sonido del dash
             isDashing = true;
             //agrego una fuerza de impulso a la ultima direccion donde fue el personaje

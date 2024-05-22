@@ -47,17 +47,20 @@ public class AnimationController : MonoBehaviour
         anim.SetFloat("XAttack", Input.GetAxis("Horizontal"));
         anim.SetFloat("YAttack", Input.GetAxis("Vertical"));
 
+        /*
         if (Input.GetKeyDown(KeyCode.P))
         {
             audioManager.SeleccionAudio(attackingNumber, 1f);
             anim.SetTrigger("isAttacking");
         }
-
+        
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetTrigger("isDashing");
             audioManager.SeleccionAudio(dashingNumber,1f);
         }
+        */
     }
 }
 
