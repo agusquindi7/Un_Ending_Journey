@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bf6bcb78410b56b4586992734d09b4b3
+guid: 2865f3e784e8ea340b12a50abc67de16
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,7 +108,70 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Assets Castillo 2_0
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 766
+        width: 69
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a2b333f292b37479c681ac9ef6978c
+      internalID: -735264982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets Castillo 2_1
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 670
+        width: 22
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ca9b5ddb5e08b458e4540734464689
+      internalID: -1316389021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets Castillo 2_2
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 416
+        width: 147
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57236335f3e13e34aa61066b91f0648d
+      internalID: 252848821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +182,10 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Assets Castillo 2_0: -735264982
+      Assets Castillo 2_1: -1316389021
+      Assets Castillo 2_2: 252848821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
