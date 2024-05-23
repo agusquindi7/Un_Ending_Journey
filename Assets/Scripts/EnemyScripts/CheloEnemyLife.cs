@@ -22,7 +22,8 @@ public class CheloEnemyLife : DestructibleObject
     public override void LifeRemaining()
     {
         if (_objectLife <= 0) 
-        { 
+        {
+            enemyAnim.SetBool("isReadyToAttack",false);
             enemyAnim.SetTrigger("isDead");
             enemyShootAttack.enabled = false;
         }

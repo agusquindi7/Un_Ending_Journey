@@ -15,14 +15,21 @@ public class Dialogos : MonoBehaviour
     public bool isTyping;
 
     public Image panel;
+    public GameObject button;
 
     [SerializeField] int index;
     [SerializeField] int indexChecker;
+
+    [Header("Movimiento y Animacion")]
+    public PlayerMovement playerMovement;
+    public AnimationController animationController;
 
     void Start()
     {
         indexChecker = lines.Length;
         panel.enabled = false;
+        button.SetActive (false);
+        //isTyping = true;
     }
 
     void Update()
@@ -34,18 +41,26 @@ public class Dialogos : MonoBehaviour
         }
         if (indexChecker > index)
         {
-            if (textComponent.text == lines[index]) NextLine();
+            return;//if (textComponent.text == lines[index] && isReadyForChange) NextLine();
         }
         else
         {
             ResetDialogue();
         }
+        //Apreto R para que el texto se escriba de una
+        if (textComponent.text != lines[index] && isTyping && Input.GetKeyDown(KeyCode.E))
+        {
+            StopAllCoroutines();
+            textComponent.text = lines[index];
+            isTyping = false;
+        }
     }
-
     void ResetDialogue()
     {
         textComponent.text = string.Empty;
         panel.enabled = false;
+        button.SetActive(false);
+
         index = 0;
         isTyping = false;
         StopAllCoroutines();
@@ -55,6 +70,7 @@ public class Dialogos : MonoBehaviour
     {
         index = 0;
         panel.enabled = true;
+        button.SetActive(true);
         StartCoroutine(TypeLine());
     }
 
@@ -63,15 +79,24 @@ public class Dialogos : MonoBehaviour
         if (indexChecker > index)
         {
             isTyping = true;
+            //Desactivo los scripts de movimiento y animacion
+            animationController.enabled = false;
+            playerMovement.enabled = false;
+
             foreach (char c in lines[index].ToCharArray())
             {
                 textComponent.text += c;
                 yield return new WaitForSeconds(textSpeed);
             }
         }
+        else
+        {
+            animationController.enabled = true;
+            playerMovement.enabled = true;
+        }
     }
 
-    void NextLine()
+    public void NextLine()
     {
         textComponent.text = string.Empty;
         index++;
