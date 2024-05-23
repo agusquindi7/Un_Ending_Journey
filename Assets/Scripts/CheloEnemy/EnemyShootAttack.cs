@@ -68,13 +68,16 @@ public class EnemyShootAttack : MonoBehaviour
         else isOnRange = false;
 
         if (_shootCooldown > 0) _shootCooldown -= Time.deltaTime;
+
+        if(isOnRange) enemyAnim.SetBool("isReadyToAttack",true);
+        else enemyAnim.SetBool("isReadyToAttack", false);
     }
 
     private void Shoot()
     {
+        enemyAnim.SetTrigger("isEnemyAttacking");
         //Cuando dispara reproduzco el sonido de fireball y animo el ataque
         audioManager.SeleccionAudio(0,1f);
-        enemyAnim.SetTrigger("isAttacking");
         //spawnea una bullet en el spawner y el cd se iguala a 1
         _shootCooldown = cooldownReloader;
         Instantiate(enemyBullet, bulletSpawner.position, bulletSpawner.rotation);

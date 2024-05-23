@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 618bc4a0461ba844fbbf3dc04fb91ce7
+guid: c6a328ae6fc296442baf13d3d229e5f8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Reja Piso 1_0
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 448
+        width: 179
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5fd7c0bb9e8004d9f57e37e1b71555
+      internalID: -482980803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reja Piso 1_1
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 452
+        width: 179
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da5f0a757ac83b4468732145eb80a7ce
+      internalID: -1920914194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +161,9 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Reja Piso 1_0: -482980803
+      Reja Piso 1_1: -1920914194
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
