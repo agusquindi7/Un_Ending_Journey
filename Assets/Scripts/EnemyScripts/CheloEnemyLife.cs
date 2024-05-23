@@ -23,9 +23,12 @@ public class CheloEnemyLife : DestructibleObject
     {
         if (_objectLife <= 0) 
         {
-            enemyAnim.SetBool("isReadyToAttack",false);
-            enemyAnim.SetTrigger("isDead");
-            enemyShootAttack.enabled = false;
+            if (enemyAnim != null)
+            {
+                enemyAnim.SetBool("isReadyToAttack", false);
+                enemyAnim.SetTrigger("isDead");
+                enemyShootAttack.enabled = false;
+            }
         }
     }
 
