@@ -23,6 +23,7 @@ public class Dialogos : MonoBehaviour
     [Header("Movimiento y Animacion")]
     public PlayerMovement playerMovement;
     public AnimationController animationController;
+    [SerializeField] AgusPlayerAttack playerAttack;
 
     void Start()
     {
@@ -82,6 +83,7 @@ public class Dialogos : MonoBehaviour
             //Desactivo los scripts de movimiento y animacion
             animationController.enabled = false;
             playerMovement.enabled = false;
+            playerAttack.enabled = false;
 
             foreach (char c in lines[index].ToCharArray())
             {
@@ -93,6 +95,7 @@ public class Dialogos : MonoBehaviour
         {
             animationController.enabled = true;
             playerMovement.enabled = true;
+            playerAttack.enabled = true;
         }
     }
 

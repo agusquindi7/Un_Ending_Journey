@@ -6261,6 +6261,7 @@ MonoBehaviour:
   indexChecker: 0
   playerMovement: {fileID: 4512697157740077161}
   animationController: {fileID: 4512697157740077160}
+  playerAttack: {fileID: 2132714451}
 --- !u!222 &133832163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6724,7 +6725,7 @@ PrefabInstance:
       objectReference: {fileID: 585696726}
     - target: {fileID: 4689312472827066805, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: cooldownReloader
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4970670788671322167, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -13317,7 +13318,7 @@ PrefabInstance:
       objectReference: {fileID: 1428343889}
     - target: {fileID: 4689312472827066805, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: cooldownReloader
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4970670788671322167, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -13839,7 +13840,7 @@ PrefabInstance:
       objectReference: {fileID: 372183012}
     - target: {fileID: 4689312472827066805, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: cooldownReloader
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4970670788671322167, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -26267,6 +26268,7 @@ MonoBehaviour:
   indexChecker: 0
   playerMovement: {fileID: 4512697157740077161}
   animationController: {fileID: 4512697157740077160}
+  playerAttack: {fileID: 2132714451}
 --- !u!222 &620726378
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26454,6 +26456,7 @@ MonoBehaviour:
   indexChecker: 0
   playerMovement: {fileID: 4512697157740077161}
   animationController: {fileID: 4512697157740077160}
+  playerAttack: {fileID: 2132714451}
 --- !u!222 &634282330
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27866,6 +27869,7 @@ MonoBehaviour:
   indexChecker: 0
   playerMovement: {fileID: 4512697157740077161}
   animationController: {fileID: 4512697157740077160}
+  playerAttack: {fileID: 2132714451}
 --- !u!1 &724229657
 GameObject:
   m_ObjectHideFlags: 0
@@ -29448,7 +29452,7 @@ PrefabInstance:
       objectReference: {fileID: 430369714}
     - target: {fileID: 4689312472827066805, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: cooldownReloader
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4970670788671322167, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -45574,7 +45578,7 @@ PrefabInstance:
       objectReference: {fileID: 1566000383}
     - target: {fileID: 4689312472827066805, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: cooldownReloader
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4970670788671322167, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -68176,7 +68180,7 @@ PrefabInstance:
       objectReference: {fileID: 1715448437}
     - target: {fileID: 4689312472827066805, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: cooldownReloader
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4970670788671322167, guid: 01e5b444a987760468cda092d4162a3d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -68570,6 +68574,7 @@ MonoBehaviour:
   indexChecker: 0
   playerMovement: {fileID: 4512697157740077161}
   animationController: {fileID: 4512697157740077160}
+  playerAttack: {fileID: 2132714451}
 --- !u!222 &1928988344
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -74978,6 +74983,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2132714451 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
+  m_PrefabInstance: {fileID: 7354785119129507664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e124cc3b78a98cc4cbafe60021a072c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2138421179
 GameObject:
   m_ObjectHideFlags: 0
@@ -76190,6 +76206,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420039}
     - target: {fileID: 2890739245275609816, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2890739245275609816, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 519420039}
@@ -76257,6 +76277,10 @@ PrefabInstance:
       propertyPath: swordBullet
       value: 
       objectReference: {fileID: 7765399421977144164, guid: 97c2c7e206f6a2544935fd87ad522c42, type: 3}
+    - target: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
+      propertyPath: attackCD
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: audioManager
       value: 

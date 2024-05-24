@@ -30,8 +30,10 @@ public class AgusPlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(attackKey) && !isAttacking) StartCoroutine(Ataque());
-
+        if (Input.GetKeyDown(attackKey) && !isAttacking)
+        {
+            StartCoroutine(Ataque());
+        }
         //le agrego 90 grados al spawner.rotation que por alguna razon estaba mal puesto
         newRotation = Quaternion.Euler(0, 0, spawner.rotation.eulerAngles.z + 90f);
 
