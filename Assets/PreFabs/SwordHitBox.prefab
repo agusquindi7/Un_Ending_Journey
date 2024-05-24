@@ -148,5 +148,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _deadTimer: 0
   _speed: 0
-  swordDmg: 15
+  swordDmg: 12.5
   myEnemyLife: {fileID: 0}

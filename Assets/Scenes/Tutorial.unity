@@ -76189,6 +76189,10 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 519420039}
+    - target: {fileID: 2890739245275609816, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 519420039}
     - target: {fileID: 3047774163170665826, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: m_Icon
       value: 
@@ -76207,11 +76211,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3112156715494115100, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8
+      value: -7.36
       objectReference: {fileID: 0}
     - target: {fileID: 3112156715494115100, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.18
+      value: -3.46
       objectReference: {fileID: 0}
     - target: {fileID: 3112156715494115100, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -76257,6 +76261,10 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 519420039}
+    - target: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
+      propertyPath: playerMovement
+      value: 
+      objectReference: {fileID: 4512697157740077161}
     - target: {fileID: 5628667717839528841, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
@@ -76296,6 +76304,10 @@ PrefabInstance:
     - target: {fileID: 7765547831839119796, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8153671007689774447, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

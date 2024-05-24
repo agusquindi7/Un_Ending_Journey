@@ -8,6 +8,7 @@ public class BossLife : DestructibleObject
 {
     public CanvasBoss myBossCanvas;
     public GameObject darkParticles;
+    public Animator bossAnimation;
 
 
     //EL AWAKE DEL SCRIPT PADRE IGUALA _objectLife = objectMaxLife
@@ -25,11 +26,11 @@ public class BossLife : DestructibleObject
         AdjustCanvas();
 
         if (_objectLife <= objectMaxLife/2) darkParticles.SetActive(true);
-        base.LifeRemaining();
+        //base.LifeRemaining();
 
 
         //ACA DEBERIA INICIAR OTRO NIVEL AGUS?
-        if (_objectLife <= 0) SceneManager.LoadScene(6);
+        if (_objectLife <= 0) bossAnimation.SetBool("isBossDead", true);
 
 
     }
@@ -39,5 +40,10 @@ public class BossLife : DestructibleObject
     {
         //paso por parametro la vida y la vida maxima al metodo UpdateMyLife() en el script del Canvas
         myBossCanvas.UpdateMyLife(_objectLife, objectMaxLife);
+    }
+
+    public void GoToVictoryScreen()
+    {
+        SceneManager.LoadScene(6);
     }
 }

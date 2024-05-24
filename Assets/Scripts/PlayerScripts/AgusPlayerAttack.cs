@@ -9,7 +9,10 @@ public class AgusPlayerAttack : MonoBehaviour
     [SerializeField] KeyCode attackKey;
     [SerializeField] float attackCD;
     [SerializeField] GameObject swordHbox;
+    //Scripts a deshabilitar al atacar
     [SerializeField] Animator animator;
+    [SerializeField] PlayerMovement playerMovement;
+
     [SerializeField] Transform spawner;
 
     private Quaternion newRotation;
@@ -39,9 +42,17 @@ public class AgusPlayerAttack : MonoBehaviour
     IEnumerator Ataque()
     {
         isAttacking = true;
+
+        //animator.enabled = false;
+        //playerMovement.enabled = false;
+
         animator.SetTrigger("isAttacking");
         audioManager.SeleccionAudio(2,0.8f);
         yield return new WaitForSeconds(attackCD);
+
+        //animator.enabled = true;
+        //playerMovement.enabled = true;
+
         isAttacking = false;
     }
 

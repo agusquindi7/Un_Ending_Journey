@@ -489,7 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isAttacking: 0
   attackKey: 112
-  attackCD: 1
+  attackCD: 0.7
   swordHbox: {fileID: 3141335466394036218, guid: b7d9fde5d99a4e04d860d03e10b98af6, type: 3}
   animator: {fileID: 7765547831839119796}
   spawner: {fileID: 5628667717839528841}
