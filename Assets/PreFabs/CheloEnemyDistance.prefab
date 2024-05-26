@@ -113,7 +113,7 @@ MonoBehaviour:
   isOnRange: 0
   audioManager: {fileID: 0}
   _shootCooldown: 0
-  cooldownReloader: 1.5
+  cooldownReloader: 1.8
   enemyAnim: {fileID: 0}
 --- !u!114 &5342557706779651849
 MonoBehaviour:
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _objectLife: 0
-  objectMaxLife: 75
+  objectMaxLife: 50
   enemyAnim: {fileID: 0}
   enemyShootAttack: {fileID: 0}
 --- !u!61 &2040167221595286780
