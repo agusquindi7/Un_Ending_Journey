@@ -10,7 +10,7 @@ public class OnHitChangeColor : MonoBehaviour
 
     private void Awake()
     {
-        //mySR = GetComponentInParent<SpriteRenderer>();
+        if(mySR==null) mySR = GetComponentInChildren<SpriteRenderer>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

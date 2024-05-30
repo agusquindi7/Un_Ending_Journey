@@ -31,7 +31,8 @@ public class EnemyShootAttack : MonoBehaviour
         attackRadius = 4f;
 
         if (target == null) target = GameObject.FindGameObjectWithTag("Player");
-        
+        if (enemyAnim == null) enemyAnim = GetComponentInChildren<Animator>();
+
         else return;      
     }
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AgusPlayerAttack : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class AgusPlayerAttack : MonoBehaviour
     //Scripts a deshabilitar al atacar
     [SerializeField] Animator animator;
     [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] float currentCD, cooldown;
+
+    [SerializeField] Slider sliderCD;
 
     [SerializeField] Transform spawner;
 
@@ -25,22 +29,33 @@ public class AgusPlayerAttack : MonoBehaviour
     void Start()
     {
         isAttacking = false;
+        currentCD = cooldown;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(attackKey) && !isAttacking)
+        currentCD += Time.fixedDeltaTime;
+        currentCD = Mathf.Clamp(currentCD, 0, 1);
+
+        if (currentCD == cooldown)
         {
-            StartCoroutine(Ataque());
+            if (Input.GetKeyDown(attackKey) && !isAttacking)
+            {
+                currentCD = 0;
+                animator.SetTrigger("isAttacking");
+                audioManager.SeleccionAudio(2, 0.8f);
+            }
         }
         //le agrego 90 grados al spawner.rotation que por alguna razon estaba mal puesto
         newRotation = Quaternion.Euler(0, 0, spawner.rotation.eulerAngles.z + 90f);
 
         //Debug.Log(spawner.rotation);
         //Debug.Log(newRotation);
-    }
 
+        if (sliderCD != null ) sliderCD.value = currentCD / cooldown;
+    }
+    /*
     IEnumerator Ataque()
     {
         isAttacking = true;
@@ -57,7 +72,7 @@ public class AgusPlayerAttack : MonoBehaviour
 
         isAttacking = false;
     }
-
+    */
     void HBoxSpawner()
     {
         if (swordHbox != null && currentHitbox == null)

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2040167221595286780}
   - component: {fileID: 9074448425209473623}
   - component: {fileID: 7436563193775549320}
+  - component: {fileID: 8877838432367336642}
   - component: {fileID: 5806869321112956434}
   m_Layer: 0
   m_Name: CheloEnemyDistance
@@ -287,6 +288,27 @@ MonoBehaviour:
   normalColor: {r: 0.9764706, g: 0.69411767, b: 1, a: 1}
   onHitColor: {r: 0.7924528, g: 0, b: 0, a: 0.88235295}
   mySR: {fileID: 0}
+--- !u!95 &8877838432367336642
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028100834454793938}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7447da6edf2135e448aec5854f459517, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &5806869321112956434
 MonoBehaviour:
   m_ObjectHideFlags: 0

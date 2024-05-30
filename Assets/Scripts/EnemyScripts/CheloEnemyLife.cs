@@ -10,6 +10,7 @@ public class CheloEnemyLife : DestructibleObject
     // Start is called before the first frame update
     void Start()
     {
+        if (enemyAnim == null) enemyAnim = GetComponentInChildren<Animator>();
         Debug.Log("Enemigo con Script");
     }
 
