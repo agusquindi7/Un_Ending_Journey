@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -116,7 +117,9 @@ public class PlayerMovement : MonoBehaviour
             isDashing = false;
             dashCooldown = 0f;
         }
+        //Clampeo el dash para que no se pase de 0 o de 1
 
+        dashCooldown = Mathf.Clamp(dashCooldown, 0, 1);
     }
 
     private void Update()

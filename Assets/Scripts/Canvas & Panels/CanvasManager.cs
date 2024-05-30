@@ -15,17 +15,36 @@ public class CanvasManager : MonoBehaviour
 
     public float lerpLife;
     //public float lastLife;
-    
+
+    //Modificaciones Agus: Slider referencia - Cooldown artificial 
+    [SerializeField] Slider sliderDash;
+    [SerializeField] float dashCooldown;
+    [SerializeField] float maxCooldown;
+
     void Start()
     {
         lerpLife = maxLife2;
         barLife.color = fullLife;
+
+        //Igualo el dash principal con el maximo
+        maxCooldown = 1f;
+        dashCooldown = maxCooldown;
     }
 
     private void Update()
     {
         lerpLife = Mathf.Lerp(lerpLife,life2, Time.deltaTime*2);
         barLife.fillAmount = lerpLife/maxLife2;
+
+        //Genero un sistema de cooldown para la barra de dash
+
+        dashCooldown += Time.deltaTime;
+        dashCooldown = Mathf.Clamp(dashCooldown, 0, 1);
+
+        if (Input.GetKeyDown(KeyCode.Space) && dashCooldown==maxCooldown) dashCooldown = 0;
+
+        //A ese valor del dash se lo paso al slider para que pase como con el ataque
+        sliderDash.value = dashCooldown / maxCooldown;
     }
 
     public void UpdateMyLife (float life, float maxLife)
