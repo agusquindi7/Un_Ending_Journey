@@ -10,6 +10,9 @@ public class BulletMovement : MonoBehaviour
 
     public CheloEnemyLife myEnemyLife;
 
+    //public AudioManager audioManager;
+        
+
     private void Awake()
     {
         /*
@@ -17,6 +20,7 @@ public class BulletMovement : MonoBehaviour
         _speed = 6f;
         swordDmg = 15f;
         */
+        //if (audioManager == null) audioManager = GetComponentInParent<AudioManager>();
     }
 
     //[SerializeField] private float _speed;
@@ -42,6 +46,7 @@ public class BulletMovement : MonoBehaviour
         {
             //addForce
             collision.GetComponent<CheloEnemyLife>().LifeController(swordDmg);
+            //audioManager.SeleccionAudio(4,1f);
             //Destroy(gameObject);
         }
 

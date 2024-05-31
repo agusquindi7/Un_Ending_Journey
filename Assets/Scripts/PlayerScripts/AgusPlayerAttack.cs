@@ -13,6 +13,7 @@ public class AgusPlayerAttack : MonoBehaviour
     //Scripts a deshabilitar al atacar
     [SerializeField] Animator animator;
     [SerializeField] PlayerMovement playerMovement;
+
     [SerializeField] float currentCD, cooldown;
 
     [SerializeField] Slider sliderCD;
@@ -25,6 +26,12 @@ public class AgusPlayerAttack : MonoBehaviour
 
     [SerializeField] AudioManager audioManager;
 
+    private void Awake()
+    {
+        if (animator == null) animator = GetComponentInChildren<Animator>();
+        if (playerMovement == null) playerMovement = GetComponent<PlayerMovement>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,15 +43,16 @@ public class AgusPlayerAttack : MonoBehaviour
     void Update()
     {
         currentCD += Time.fixedDeltaTime;
-        currentCD = Mathf.Clamp(currentCD, 0, 1);
+        currentCD = Mathf.Clamp(currentCD, 0, cooldown);
 
         if (currentCD == cooldown)
         {
-            if (Input.GetKeyDown(attackKey) && !isAttacking)
+            if (Input.GetMouseButtonDown(0) && !isAttacking)
             {
                 currentCD = 0;
                 animator.SetTrigger("isAttacking");
                 audioManager.SeleccionAudio(2, 0.8f);
+                audioManager.SeleccionAudio(3, 0.8f);
             }
         }
         //le agrego 90 grados al spawner.rotation que por alguna razon estaba mal puesto
@@ -80,7 +88,9 @@ public class AgusPlayerAttack : MonoBehaviour
             //Le sumo 90 grados a la rotacion del spawner porque no se xd
             //Almaceno mi prefab en una variable para poder destruir
             currentHitbox = Instantiate(swordHbox, spawner.position, newRotation);
-            currentHitbox.transform.parent = spawner; // Opcional: hacer que la Hitbox sea hija del spawner
+            currentHitbox.transform.parent = spawner; // Hacer que la Hitbox sea hija del spawner
+            //Deshabilito el movimiento cuando spawneo
+            playerMovement.enabled = false;
         }
     }
 
@@ -90,6 +100,8 @@ public class AgusPlayerAttack : MonoBehaviour
         {
             Destroy(currentHitbox);
             currentHitbox = null;
+            //Habilito el movimiento de nuevo
+            playerMovement.enabled = true;
         }
     }
 }

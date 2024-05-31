@@ -7,6 +7,10 @@ public class CheloEnemyLife : DestructibleObject
     //Añado el animador y desde aca pregunto si vida es menor a 0
     public Animator enemyAnim;
     public EnemyShootAttack enemyShootAttack;
+
+
+    public AudioManager audioManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,5 +40,10 @@ public class CheloEnemyLife : DestructibleObject
     void Death()
     {
         Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("PlayerSword")) audioManager.SeleccionAudio(4,1);
     }
 }
