@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 9074448425209473623}
   - component: {fileID: 7436563193775549320}
   - component: {fileID: 8877838432367336642}
+  - component: {fileID: 2702120977306451619}
   - component: {fileID: 5806869321112956434}
   m_Layer: 0
   m_Name: CheloEnemyDistance
@@ -107,14 +108,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e757df89292034ba846b4e51b6506d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackRadius: 4
+  attackRadius: 3
   enemyBullet: {fileID: 8827486808073707611, guid: bdcdb697b140ffd4085df3e89c4844c0, type: 3}
   bulletSpawner: {fileID: 530985833415079494}
   target: {fileID: 0}
   isOnRange: 0
   audioManager: {fileID: 0}
   _shootCooldown: 0
-  cooldownReloader: 1.8
+  cooldownReloader: 2.5
   enemyAnim: {fileID: 0}
 --- !u!114 &5342557706779651849
 MonoBehaviour:
@@ -132,6 +133,7 @@ MonoBehaviour:
   objectMaxLife: 50
   enemyAnim: {fileID: 0}
   enemyShootAttack: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!61 &2040167221595286780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -309,6 +311,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2702120977306451619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028100834454793938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b0c452ef25aa644bc9fec31a9ae418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  _waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  currentWaypoint: 0
 --- !u!114 &5806869321112956434
 MonoBehaviour:
   m_ObjectHideFlags: 0

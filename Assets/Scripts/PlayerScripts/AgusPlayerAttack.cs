@@ -7,14 +7,17 @@ public class AgusPlayerAttack : MonoBehaviour
 {
     [Header("Values")]
     [SerializeField] bool isAttacking;
-    [SerializeField] KeyCode attackKey;
-    [SerializeField] float attackCD;
+    //[SerializeField] KeyCode attackKey;
+    //[SerializeField] float attackCD;
     [SerializeField] GameObject swordHbox;
+    [SerializeField] GameObject swordStrongHbox;
     //Scripts a deshabilitar al atacar
     [SerializeField] Animator animator;
     [SerializeField] PlayerMovement playerMovement;
 
     [SerializeField] float currentCD, cooldown;
+
+    [SerializeField] float currentLightCD, cooldownLight;
 
     [SerializeField] Slider sliderCD;
 
@@ -29,58 +32,66 @@ public class AgusPlayerAttack : MonoBehaviour
     private void Awake()
     {
         if (animator == null) animator = GetComponentInChildren<Animator>();
-        if (playerMovement == null) playerMovement = GetComponent<PlayerMovement>();
+        //if (playerMovement == null) playerMovement = GetComponent<PlayerMovement>();
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         isAttacking = false;
         currentCD = cooldown;
+        currentLightCD = cooldownLight;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        currentCD += Time.fixedDeltaTime;
+        currentCD += Time.deltaTime;
         currentCD = Mathf.Clamp(currentCD, 0, cooldown);
+
+        currentLightCD += Time.deltaTime;
+        currentLightCD = Mathf.Clamp(currentLightCD, 0, cooldownLight);
 
         if (currentCD == cooldown)
         {
-            if (Input.GetMouseButtonDown(0) && !isAttacking)
+            if (Input.GetMouseButtonDown(1) && !isAttacking)
             {
+                isAttacking = true;
                 currentCD = 0;
-                animator.SetTrigger("isAttacking");
-                audioManager.SeleccionAudio(2, 0.8f);
+                animator.SetTrigger("isStronging");
+                audioManager.SeleccionAudio(5, 1f);
                 audioManager.SeleccionAudio(3, 0.8f);
             }
         }
+        else isAttacking = false;
+
+        if (currentLightCD == cooldownLight)
+        {
+            if (Input.GetMouseButtonDown(0) && !isAttacking)
+            {
+                isAttacking = true;
+                currentLightCD = 0;
+                animator.SetTrigger("isAttacking");
+                audioManager.SeleccionAudio(2, 0.2f);
+                //audioManager.SeleccionAudio(3, 0.4f);
+            }
+        }
+        else isAttacking = false;
         //le agrego 90 grados al spawner.rotation que por alguna razon estaba mal puesto
         newRotation = Quaternion.Euler(0, 0, spawner.rotation.eulerAngles.z + 90f);
 
-        //Debug.Log(spawner.rotation);
-        //Debug.Log(newRotation);
-
         if (sliderCD != null ) sliderCD.value = currentCD / cooldown;
     }
-    /*
-    IEnumerator Ataque()
+    void HBoxStrongSpawner()
     {
-        isAttacking = true;
-
-        //animator.enabled = false;
-        //playerMovement.enabled = false;
-
-        animator.SetTrigger("isAttacking");
-        audioManager.SeleccionAudio(2,0.8f);
-        yield return new WaitForSeconds(attackCD);
-
-        //animator.enabled = true;
-        //playerMovement.enabled = true;
-
-        isAttacking = false;
+        if (swordStrongHbox != null && currentHitbox == null)
+        {
+            //Le sumo 90 grados a la rotacion del spawner porque no se xd
+            //Almaceno mi prefab en una variable para poder destruir
+            currentHitbox = Instantiate(swordStrongHbox, spawner.position, newRotation);
+            currentHitbox.transform.parent = spawner; // Hacer que la Hitbox sea hija del spawner
+            //Deshabilito el movimiento cuando spawneo
+            playerMovement.enabled = false;
+        }
     }
-    */
     void HBoxSpawner()
     {
         if (swordHbox != null && currentHitbox == null)
@@ -93,7 +104,6 @@ public class AgusPlayerAttack : MonoBehaviour
             playerMovement.enabled = false;
         }
     }
-
     void HBoxDestroyer()
     {
         if (currentHitbox != null)

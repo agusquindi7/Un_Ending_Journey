@@ -9373,6 +9373,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ba8a06b5fbabd3649978ee8a81c0155d, type: 3}
   - {fileID: 8300000, guid: 12b083f8d097ac44ab15aa33ecf89b2c, type: 3}
   - {fileID: 8300000, guid: 20211c3ce8251784dbfcbbfa24d3180f, type: 3}
+  - {fileID: 8300000, guid: 4abef7c47b9f44d498ff9d63c80a9ea2, type: 3}
 --- !u!1 &520680458
 GameObject:
   m_ObjectHideFlags: 0
@@ -28683,7 +28684,7 @@ PrefabInstance:
       objectReference: {fileID: 7765399421977144164, guid: 97c2c7e206f6a2544935fd87ad522c42, type: 3}
     - target: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: cooldown
-      value: 2
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: sliderCD

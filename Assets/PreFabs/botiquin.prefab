@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5534774308480150837}
   - component: {fileID: 4854580165207483716}
   - component: {fileID: 2982073005024814941}
+  - component: {fileID: 2020787624123099372}
   m_Layer: 0
   m_Name: botiquin
   m_TagString: Untagged
@@ -145,3 +146,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 40
   myPlayerLife: {fileID: 0}
+--- !u!95 &2020787624123099372
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090761786883161838}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dbb0ba0ee96e00b49bbcd64fe2f9367f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
