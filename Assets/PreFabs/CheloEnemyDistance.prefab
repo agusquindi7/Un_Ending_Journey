@@ -290,6 +290,8 @@ MonoBehaviour:
   normalColor: {r: 0.9764706, g: 0.69411767, b: 1, a: 1}
   onHitColor: {r: 0.7924528, g: 0, b: 0, a: 0.88235295}
   mySR: {fileID: 0}
+  enemyShoot: {fileID: 4689312472827066805}
+  enemyWaypoints: {fileID: 2702120977306451619}
 --- !u!95 &8877838432367336642
 Animator:
   serializedVersion: 5
