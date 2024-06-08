@@ -77342,6 +77342,14 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 489179856}
+    - target: {fileID: 7713891912558099733, guid: 6a1f171a214c38e4284c59dd402df48d, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 519420038}
+    - target: {fileID: 7713891912558099733, guid: 6a1f171a214c38e4284c59dd402df48d, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 519420039}
     - target: {fileID: 7993531149105110369, guid: 6a1f171a214c38e4284c59dd402df48d, type: 3}
       propertyPath: pauseMenu
       value: 

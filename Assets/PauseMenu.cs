@@ -36,23 +36,25 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
 
         audioSource.mute = true;
-
         animator.enabled = false;
+
     }
 
     public void ResumeMenu()
     {
+        audioSource.mute = false;
+        animator.enabled = true;
+
         pauseMenu.SetActive(false);
         isPaused = false;
         Time.timeScale = 1f;
-
-        audioSource.mute = false;
-
-        animator.enabled = true;
     }
 
     public void GoToMenu()
     {
+        audioSource.mute = false;
+        animator.enabled = true;
+        Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
 }

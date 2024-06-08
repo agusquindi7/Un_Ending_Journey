@@ -27,14 +27,18 @@ public class OnHitChangeColor : MonoBehaviour
     
     IEnumerator ChangeColor()
     {
-        enemyWaypoints.enabled = false;
-        enemyShoot.enabled = false;
+        if (enemyShoot != null && enemyWaypoints != null && mySR != null)
+        {
+            enemyWaypoints.enabled = false;
+            enemyShoot.enabled = false;
 
-        mySR.color = onHitColor;
-        yield return new WaitForSeconds(0.5f);
-        mySR.color = normalColor;
+            mySR.color = onHitColor;
+            yield return new WaitForSeconds(0.5f);
+            mySR.color = normalColor;
 
-        enemyShoot.enabled = true;
-        enemyWaypoints.enabled = true;
+            enemyShoot.enabled = true;
+            enemyWaypoints.enabled = true;
+        }
+        
     }
 }

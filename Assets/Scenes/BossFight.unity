@@ -16661,6 +16661,8 @@ MonoBehaviour:
   normalColor: {r: 0.9764706, g: 0.69411767, b: 1, a: 1}
   onHitColor: {r: 1, g: 0, b: 0, a: 0.88235295}
   mySR: {fileID: 0}
+  enemyShoot: {fileID: 0}
+  enemyWaypoints: {fileID: 0}
 --- !u!1 &724229657
 GameObject:
   m_ObjectHideFlags: 0
@@ -21371,6 +21373,8 @@ MonoBehaviour:
   normalColor: {r: 0.9764706, g: 0.69411767, b: 1, a: 1}
   onHitColor: {r: 1, g: 0, b: 0, a: 0.88235295}
   mySR: {fileID: 0}
+  enemyShoot: {fileID: 0}
+  enemyWaypoints: {fileID: 0}
 --- !u!1 &1338296208
 GameObject:
   m_ObjectHideFlags: 0
@@ -21777,6 +21781,8 @@ MonoBehaviour:
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   onHitColor: {r: 0.42095712, g: 0.07689566, b: 0.5660378, a: 0.84313726}
   mySR: {fileID: 0}
+  enemyShoot: {fileID: 0}
+  enemyWaypoints: {fileID: 0}
 --- !u!1001 &1391867959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22430,6 +22436,8 @@ MonoBehaviour:
   normalColor: {r: 0.9764706, g: 0.69411767, b: 1, a: 1}
   onHitColor: {r: 0.7924528, g: 0, b: 0, a: 0.88235295}
   mySR: {fileID: 0}
+  enemyShoot: {fileID: 0}
+  enemyWaypoints: {fileID: 0}
 --- !u!1 &1431812073
 GameObject:
   m_ObjectHideFlags: 0
@@ -28684,7 +28692,7 @@ PrefabInstance:
       objectReference: {fileID: 7765399421977144164, guid: 97c2c7e206f6a2544935fd87ad522c42, type: 3}
     - target: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: cooldown
-      value: 2.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: sliderCD
@@ -28698,6 +28706,10 @@ PrefabInstance:
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 519420039}
+    - target: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
+      propertyPath: cooldownLight
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4490366776789726687, guid: 6873da9450e07684e8bcd735f7e7f3b3, type: 3}
       propertyPath: playerMovement
       value: 
