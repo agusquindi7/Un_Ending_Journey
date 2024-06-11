@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 6e51684851a7cf647a48a6e536f34413
   - enabled: 1
-    path: Assets/Scenes/Tutorial.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/entrada a la montana.unity
+    guid: 65e505555fdd1294fb0238b32ab7ab92
   - enabled: 1
     path: Assets/Scenes/Debug_Level.unity
     guid: 72f5bc59824711d4bafb9f34f45e0e3d
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Castillo1.unity
     guid: f936be21633ee554fadff1880befdf7c
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
