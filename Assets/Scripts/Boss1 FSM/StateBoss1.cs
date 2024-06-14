@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//se pone el nombre del script en minuscula ¿porque? nomenclatura abstract?
-public abstract class state
+public abstract class stateBoss1
 {
-    public FSM fsm;
+    public FSMBoss1 fsmBoss1;
 
     public abstract void OnEnter();
     public abstract void OnExit();
