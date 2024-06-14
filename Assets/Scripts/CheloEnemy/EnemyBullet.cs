@@ -22,7 +22,7 @@ public class EnemyBullet : MonoBehaviour
     {
         _deadTimer = 3;
         _speed = 4f;
-        damage = 10f;
+        //damage = 10f;
         if (target == null)
         {
             target = GameObject.FindGameObjectWithTag("Player");

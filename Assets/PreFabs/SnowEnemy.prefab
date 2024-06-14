@@ -243,7 +243,7 @@ MonoBehaviour:
   isOnRange: 0
   audioManager: {fileID: 0}
   _shootCooldown: 0
-  cooldownReloader: 2
+  cooldownReloader: 4
   enemyAnim: {fileID: 3094894550578073196}
 --- !u!61 &7908720617662328956
 BoxCollider2D:
