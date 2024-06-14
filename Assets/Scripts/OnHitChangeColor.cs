@@ -13,7 +13,7 @@ public class OnHitChangeColor : MonoBehaviour
 
     private void Awake()
     {
-        if(mySR==null) mySR = GetComponentInChildren<SpriteRenderer>();
+        if (mySR==null) mySR = GetComponentInChildren<SpriteRenderer>();
         if (enemyShoot == null) enemyShoot = enemyShoot.GetComponentInChildren<EnemyShootAttack>();
         if (enemyWaypoints == null) enemyWaypoints.GetComponent<EnemyWaypoints>();
     }
