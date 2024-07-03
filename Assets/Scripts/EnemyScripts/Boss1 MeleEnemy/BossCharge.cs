@@ -54,6 +54,10 @@ public class BossCharge : MonoBehaviour
     public float detectionRadius;
     public float attackRadius;
 
+    public bool specialActivate;
+    public Vector3 targetPos;
+
+    //public GameObject bossSpecialBullet;
 
 
     FSMBoss1 myFsmBoss1;

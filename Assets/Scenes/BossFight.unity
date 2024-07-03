@@ -10010,13 +10010,15 @@ MonoBehaviour:
   bossBullet: {fileID: 3001661046792956246, guid: a494840517e12c4408e49bfc37914068, type: 3}
   damage: 10
   trackTime: 0
-  trackDuration: 1
+  trackDuration: 1.5
   spawner: {fileID: 1146805982}
   isMovingHorizontally: 0
   isMovingVertically: 0
   isStopped: 0
   detectionRadius: 11.43
   attackRadius: 1.8
+  specialActivate: 0
+  targetPos: {x: 0, y: 0, z: 0}
 --- !u!114 &586015237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10104,7 +10106,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &586015240
 SpriteRenderer:
@@ -22633,6 +22635,8 @@ MonoBehaviour:
   isStopped: 0
   detectionRadius: 0
   attackRadius: 0
+  specialActivate: 0
+  targetPos: {x: 0, y: 0, z: 0}
 --- !u!114 &1368320851
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ public class RestingBoss1 : stateBoss1
 
     private IEnumerator RestCoroutine()
     {
-        yield return new WaitForSeconds(_myBossCharge.restTime*3); //Espera
+        yield return new WaitForSeconds(_myBossCharge.restTime*2); //Espera
         //yield return new WaitForSeconds(_myBossCharge.restTime); // Esperar después de atacar
 
         fsmBoss1.ChangeState(StateIDBoss1.WalkingBoss1);
