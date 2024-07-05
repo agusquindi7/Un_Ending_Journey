@@ -50079,6 +50079,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 40151395318806518, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1177723544}
     - target: {fileID: 60716778078313806, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -50091,6 +50095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava Golem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2903481898368821159, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 164722437}
     - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.51394
@@ -50669,6 +50677,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 40151395318806518, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1177723544}
     - target: {fileID: 60716778078313806, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -50681,6 +50693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava Golem (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2903481898368821159, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 164722437}
     - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5818524

@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75648f9beab83e84f9857bddcc574dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  castilloNoBoss: entradaCastillo
+  castilloNoBoss: BossFight
   player: Player
 --- !u!61 &19938054
 BoxCollider2D:

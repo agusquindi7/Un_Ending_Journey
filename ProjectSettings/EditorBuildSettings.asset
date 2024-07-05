@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minanivel2.unity
     guid: 989d49789bd8ade4caa99efe06a09bcd
+  - enabled: 1
+    path: Assets/Scenes/SalidadeMina.unity
+    guid: a41d81dba2c636e498f48b34de54051e
+  - enabled: 1
+    path: Assets/Scenes/entradaCastillo.unity
+    guid: 2987d78d546a61844a9155618e119726
   m_configObjects: {}
