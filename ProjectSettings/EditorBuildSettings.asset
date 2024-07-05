@@ -35,4 +35,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/montana.unity
     guid: 84b01e65790e5024cbd9e17a2e3bb53a
+  - enabled: 1
+    path: Assets/Scenes/NivelPasto1.unity
+    guid: a76d9f63ccd953340b609f89f591ea0f
+  - enabled: 1
+    path: Assets/Scenes/NivelPasto2.unity
+    guid: f2493e7337e7d7e48b6adfe09c1948dc
+  - enabled: 1
+    path: Assets/Scenes/NivelPasto3.unity
+    guid: 3a7d6b9ff4491fc42b585c0011c11a99
   m_configObjects: {}

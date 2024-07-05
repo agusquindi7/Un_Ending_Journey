@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Estatuas y puestito_0
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 471
+        width: 372
+        height: 483
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d7efe956235ef4391937d0342757a3
+      internalID: 97051136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estatuas y puestito_1
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 435
+        width: 251
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e5908865624cc40814aeac922ca441
+      internalID: 371558088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estatuas y puestito_2
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 454
+        width: 436
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b2e016e49830f43ab8afcf256ae82e
+      internalID: -1996141148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estatuas y puestito_10
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 274
+        width: 266
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6cafc041cd7794b87e31233b0d66a6
+      internalID: -1471453051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estatuas y puestito_24
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 82
+        width: 135
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcef828ff39eaa488bb5af08394da38
+      internalID: 1453353590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estatuas y puestito_3
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 76
+        width: 190
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e914317c5cd9f44835a7abaf6824d6
+      internalID: 1534007593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Estatuas y puestito_4
+      rect:
+        serializedVersion: 2
+        x: 1630
+        y: 236
+        width: 197
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5413b505ee574b469a1befd40095fe6
+      internalID: -473040957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +266,40 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Estatuas y puestito_0: 97051136
+      Estatuas y puestito_1: 371558088
+      Estatuas y puestito_10: -1471453051
+      Estatuas y puestito_11: 136725351
+      Estatuas y puestito_12: -1473521691
+      Estatuas y puestito_13: 900755231
+      Estatuas y puestito_14: 936814150
+      Estatuas y puestito_15: 100904623
+      Estatuas y puestito_16: -2079575879
+      Estatuas y puestito_17: 1487954081
+      Estatuas y puestito_18: -950635082
+      Estatuas y puestito_19: -2145472013
+      Estatuas y puestito_2: -1996141148
+      Estatuas y puestito_20: 1919840121
+      Estatuas y puestito_21: 917296856
+      Estatuas y puestito_22: 498696939
+      Estatuas y puestito_23: 1325892264
+      Estatuas y puestito_24: 1453353590
+      Estatuas y puestito_25: 1135410998
+      Estatuas y puestito_26: -761902709
+      Estatuas y puestito_27: 1144258493
+      Estatuas y puestito_28: -1112954276
+      Estatuas y puestito_29: -100069821
+      Estatuas y puestito_3: 1534007593
+      Estatuas y puestito_30: -339370470
+      Estatuas y puestito_31: 935656360
+      Estatuas y puestito_32: 212622187
+      Estatuas y puestito_4: -473040957
+      Estatuas y puestito_5: -1980119686
+      Estatuas y puestito_6: 1371698750
+      Estatuas y puestito_7: -392229029
+      Estatuas y puestito_8: 286169291
+      Estatuas y puestito_9: 300108085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
