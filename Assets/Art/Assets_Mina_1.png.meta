@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -108,7 +108,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Assets_Mina_1_0
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 611
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148f5e539ee2f504688ca983b27a4f8e
+      internalID: 1313452801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Mina_1_1
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 619
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3babb65ceda32e43819afc5ef8a968e
+      internalID: 410633140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Mina_1_2
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 378
+        width: 363
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb8df0004d4edb46b930c6df0f3b13c
+      internalID: -940162262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Mina_1_3
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 619
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f1915177ed1cc4fa6aa9d3a315728a
+      internalID: -984599307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Mina_1_4
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 610
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf01b41afff1f94c870f4dd85af16e9
+      internalID: -1716687283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Mina_1_5
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 243
+        width: 299
+        height: 616
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ddb4923733df641a9b4e78d276e28a
+      internalID: -1809511417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Mina_1_6
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 593
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c70bd2d9f02a234fa0ef3be65b05d0d
+      internalID: 559720088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assets_Mina_1_7
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 593
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8475cb418234745b5cd64800d27380
+      internalID: -1743794602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +287,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Assets_Mina_1_0: 1313452801
+      Assets_Mina_1_1: 410633140
+      Assets_Mina_1_2: -940162262
+      Assets_Mina_1_3: -984599307
+      Assets_Mina_1_4: -1716687283
+      Assets_Mina_1_5: -1809511417
+      Assets_Mina_1_6: 559720088
+      Assets_Mina_1_7: -1743794602
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
