@@ -38,7 +38,10 @@ public class PlayerLife : DestructibleObject
         //CANVAS DE LA BARRA DE VIDA
         AdjustCanvas();
         base.LifeRemaining();
-        if (_objectLife<=0) SceneManager.LoadScene(3);
+        if (_objectLife <= 0)
+        {
+            SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+        }
     }
     
     //CANVAS DE LA BARRA DE VIDA
