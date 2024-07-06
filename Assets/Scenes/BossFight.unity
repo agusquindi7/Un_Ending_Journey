@@ -10019,6 +10019,7 @@ MonoBehaviour:
   attackRadius: 1.8
   specialActivate: 0
   targetPos: {x: 0, y: 0, z: 0}
+  animator: {fileID: 586015235}
 --- !u!114 &586015237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18529,7 +18530,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1048030507
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: -946313304, guid: 741bea6fb7fb95b49a02670f3d81bdac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22637,6 +22638,7 @@ MonoBehaviour:
   attackRadius: 0
   specialActivate: 0
   targetPos: {x: 0, y: 0, z: 0}
+  animator: {fileID: 0}
 --- !u!114 &1368320851
 MonoBehaviour:
   m_ObjectHideFlags: 0

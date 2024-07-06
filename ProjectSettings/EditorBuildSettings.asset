@@ -51,6 +51,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Minanivel2.unity
     guid: 989d49789bd8ade4caa99efe06a09bcd
   - enabled: 1
+    path: Assets/Scenes/Montana final.unity
+    guid: 7e93b2ba89674824380430adb9bf32bb
+  - enabled: 1
     path: Assets/Scenes/SalidadeMina.unity
     guid: a41d81dba2c636e498f48b34de54051e
   - enabled: 1

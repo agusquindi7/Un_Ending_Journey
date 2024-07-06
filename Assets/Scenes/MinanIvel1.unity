@@ -281,6 +281,79 @@ CapsuleCollider2D:
   m_Offset: {x: -0.14, y: -0.35}
   m_Size: {x: 5.84, y: 2.09}
   m_Direction: 1
+--- !u!1001 &222471254
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 40151395318806518, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1773067863}
+    - target: {fileID: 60716778078313806, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 60716778078313806, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1921846307297287292, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_Name
+      value: Lava Golem
+      objectReference: {fileID: 0}
+    - target: {fileID: 2903481898368821159, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1844638883}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3925753
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.619037
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760604639537922899, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 348f31c1ef5f0ab49b174ee60addeedd, type: 3}
 --- !u!1 &352367356
 GameObject:
   m_ObjectHideFlags: 0
@@ -43114,3 +43187,4 @@ SceneRoots:
   - {fileID: 1095591828}
   - {fileID: 1070601661}
   - {fileID: 697888649}
+  - {fileID: 222471254}

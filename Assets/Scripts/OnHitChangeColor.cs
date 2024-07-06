@@ -13,9 +13,16 @@ public class OnHitChangeColor : MonoBehaviour
 
     private void Awake()
     {
+        try
+        {
         if (mySR==null) mySR = GetComponentInChildren<SpriteRenderer>();
         if (enemyShoot == null) enemyShoot = enemyShoot.GetComponentInChildren<EnemyShootAttack>();
         if (enemyWaypoints == null) enemyWaypoints.GetComponent<EnemyWaypoints>();
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log("Error " + e);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

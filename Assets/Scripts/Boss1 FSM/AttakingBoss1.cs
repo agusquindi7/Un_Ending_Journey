@@ -21,6 +21,8 @@ public class AttakingBoss1 : stateBoss1
         _myBossCharge.rb.velocity = Vector2.zero;
         Debug.LogWarning("ATTAKING");
 
+        _myBossCharge.animator.SetTrigger("isAttacking");
+
         _myBossCharge.StartCoroutine(AttackCoroutine());
 
     }
@@ -37,9 +39,9 @@ public class AttakingBoss1 : stateBoss1
 
     private IEnumerator AttackCoroutine()
     {
-        yield return new WaitForSeconds(_myBossCharge.restTime*0.5f); //Espera antes de atacar
+        //yield return new WaitForSeconds(_myBossCharge.restTime*0.5f); //Espera antes de atacar
         Object.Instantiate(_myBossCharge.bossBullet, _myBossCharge.spawner.transform.position, _myBossCharge.spawner.transform.rotation);
-        yield return new WaitForSeconds(_myBossCharge.restTime*0.5f); //Espera después de atacar
+        yield return new WaitForSeconds(_myBossCharge.restTime*0.1f); //Espera después de atacar
 
         if (_myBossCharge.RandomNumber >= 50) fsmBoss1.ChangeState(StateIDBoss1.SpecialAttackBoss1);
 

@@ -15,9 +15,11 @@ public class LavaGolemHitbox : MonoBehaviour
         // Verificar si la hitbox colisiona con el jugador
         if (other.CompareTag("Player"))
         {
-            PlayerLife playerLife = other.GetComponent<PlayerLife>();
+            //PlayerLife playerLife = other.GetComponent<PlayerLife>();
+            other.GetComponent<PlayerLife>().LifeController(damage);
+
             // Aquí puedes aplicar daño al jugador
-            playerLife._objectLife -= damage;
+            //playerLife._objectLife -= damage;
 
             // Destruir la hitbox
             Destroy(gameObject);

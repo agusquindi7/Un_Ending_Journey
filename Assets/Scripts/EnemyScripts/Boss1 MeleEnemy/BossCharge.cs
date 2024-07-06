@@ -57,6 +57,8 @@ public class BossCharge : MonoBehaviour
     public bool specialActivate;
     public Vector3 targetPos;
 
+    public Animator animator;
+
     //public GameObject bossSpecialBullet;
 
 

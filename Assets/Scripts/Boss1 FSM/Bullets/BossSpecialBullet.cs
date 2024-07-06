@@ -12,7 +12,7 @@ public class BossSpecialBullet : MonoBehaviour
 
     private void Awake()
     {
-        damage = 10f;
+        damage = 20f;
 
         if (target == null)
         {

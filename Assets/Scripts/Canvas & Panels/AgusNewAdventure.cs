@@ -21,9 +21,9 @@ public class AgusNewAdventure : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void NewAdventure()
+    public void LoadScene(string scene)
     {
-        SceneManager.LoadScene("entrada a la montana");
+        SceneManager.LoadScene(scene);
     }
 
     public void HoverSoundNA()

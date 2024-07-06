@@ -2221,14 +2221,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 519420037}
         m_TargetAssemblyTypeName: AgusNewAdventure, Assembly-CSharp
-        m_MethodName: NewAdventure
-        m_Mode: 1
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: NivelPasto1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &973440119
@@ -3538,6 +3538,9 @@ MonoBehaviour:
   life2: 0
   maxLife2: 0
   lerpLife: 0
+  sliderDash: {fileID: 0}
+  dashCooldown: 0
+  maxCooldown: 0
 --- !u!114 &1988361287
 MonoBehaviour:
   m_ObjectHideFlags: 0

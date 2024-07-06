@@ -29,8 +29,12 @@ public class WalkingBoss1 : stateBoss1
         {
             fsmBoss1.ChangeState(StateID.Idle);
         }
-
+        animator.SetBool("isWalking",false);
         */
+
+        _myBossCharge.animator.SetBool("isWalking",true);
+
+
 
         //si la distancia es menor o igual, entra en estado de ataque
         if (Vector2.Distance(_myBossCharge.transform.position, _myBossCharge.target.transform.position) <= _myBossCharge.attackRadius)
