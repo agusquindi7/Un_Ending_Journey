@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 6e51684851a7cf647a48a6e536f34413
   - enabled: 1
-    path: Assets/Scenes/entrada a la montana.unity
+    path: Assets/Scenes/Hielo/entrada a la montana.unity
     guid: 65e505555fdd1294fb0238b32ab7ab92
   - enabled: 1
     path: Assets/Scenes/Debug_Level.unity
@@ -33,30 +33,30 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/montana.unity
+    path: Assets/Scenes/Hielo/montana.unity
     guid: 84b01e65790e5024cbd9e17a2e3bb53a
   - enabled: 1
-    path: Assets/Scenes/NivelPasto1.unity
+    path: Assets/Scenes/Pasto/NivelPasto1.unity
     guid: a76d9f63ccd953340b609f89f591ea0f
   - enabled: 1
-    path: Assets/Scenes/NivelPasto2.unity
+    path: Assets/Scenes/Pasto/NivelPasto2.unity
     guid: f2493e7337e7d7e48b6adfe09c1948dc
   - enabled: 1
-    path: Assets/Scenes/NivelPasto3.unity
+    path: Assets/Scenes/Pasto/NivelPasto3.unity
     guid: 3a7d6b9ff4491fc42b585c0011c11a99
   - enabled: 1
-    path: Assets/Scenes/Minanivel1.unity
+    path: Assets/Scenes/Lava/MinanIvel1.unity
     guid: bbff376489f326c4abd96f5f735029d3
   - enabled: 1
-    path: Assets/Scenes/Minanivel2.unity
+    path: Assets/Scenes/Lava/Minanivel2.unity
     guid: 989d49789bd8ade4caa99efe06a09bcd
   - enabled: 1
-    path: Assets/Scenes/Montana final.unity
+    path: Assets/Scenes/Hielo/Montana final.unity
     guid: 7e93b2ba89674824380430adb9bf32bb
   - enabled: 1
-    path: Assets/Scenes/SalidadeMina.unity
+    path: Assets/Scenes/Lava/SalidadeMina.unity
     guid: a41d81dba2c636e498f48b34de54051e
   - enabled: 1
-    path: Assets/Scenes/entradaCastillo.unity
+    path: Assets/Scenes/Pasto/entradaCastillo.unity
     guid: 2987d78d546a61844a9155618e119726
   m_configObjects: {}
